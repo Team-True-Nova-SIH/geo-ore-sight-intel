@@ -1,0 +1,1555 @@
+{
+  "total_zones_explained": 50,
+  "zones": [
+    {
+      "zone_id": "ZONE_1446",
+      "lat": 21.38201,
+      "lon": 79.26572,
+      "probability": 0.9669,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0331,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 3.17,
+          "shap_impact": 1.0861
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.7443,
+          "shap_impact": 0.9202
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.7252,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 3.17. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_479",
+      "lat": 21.99818,
+      "lon": 80.45395,
+      "probability": 0.9669,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0331,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 3.11,
+          "shap_impact": 1.0861
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.9337,
+          "shap_impact": 0.9202
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6277,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 3.11. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1371",
+      "lat": 22.01528,
+      "lon": 80.45709,
+      "probability": 0.9669,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0331,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 5.03,
+          "shap_impact": 1.0982
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.8699,
+          "shap_impact": 0.9202
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6151,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 5.03. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1240",
+      "lat": 21.36048,
+      "lon": 79.27829,
+      "probability": 0.9669,
+      "rf_baseline_probability": 0.9788,
+      "ensemble_divergence": 0.0119,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 5.74,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.5954,
+          "shap_impact": 0.9302
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5758,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 5.74. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_25",
+      "lat": 21.6887,
+      "lon": 79.6841,
+      "probability": 0.9659,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0341,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 2.3,
+          "shap_impact": 1.0982
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.7227,
+          "shap_impact": 0.996
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6699,
+          "shap_impact": 0.5699
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 2.30. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_262",
+      "lat": 21.97549,
+      "lon": 80.48508,
+      "probability": 0.9659,
+      "rf_baseline_probability": 0.9925,
+      "ensemble_divergence": 0.0266,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 4.38,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.6371,
+          "shap_impact": 0.9302
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.7256,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 4.38. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1264",
+      "lat": 21.65814,
+      "lon": 79.68283,
+      "probability": 0.9659,
+      "rf_baseline_probability": 0.9618,
+      "ensemble_divergence": 0.0041,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 4.98,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.5528,
+          "shap_impact": 0.9302
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.7465,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 4.98. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1377",
+      "lat": 21.69803,
+      "lon": 79.66796,
+      "probability": 0.9659,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0341,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 0.26,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.8448,
+          "shap_impact": 0.9302
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6277,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 0.26. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_867",
+      "lat": 21.3984,
+      "lon": 79.23286,
+      "probability": 0.9656,
+      "rf_baseline_probability": 0.9972,
+      "ensemble_divergence": 0.0316,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 3.88,
+          "shap_impact": 1.0982
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.9726,
+          "shap_impact": 0.9202
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5971,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 3.88. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_856",
+      "lat": 21.39645,
+      "lon": 79.28603,
+      "probability": 0.9656,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0344,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 2.76,
+          "shap_impact": 1.0861
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.765,
+          "shap_impact": 0.9202
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.7502,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 2.76. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_706",
+      "lat": 22.03446,
+      "lon": 80.48494,
+      "probability": 0.9656,
+      "rf_baseline_probability": 0.9314,
+      "ensemble_divergence": 0.0342,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 8.24,
+          "shap_impact": 1.0982
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.5577,
+          "shap_impact": 0.9202
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6249,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 8.24. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1426",
+      "lat": 22.02155,
+      "lon": 80.44768,
+      "probability": 0.9656,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0344,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 5.57,
+          "shap_impact": 1.0982
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.7508,
+          "shap_impact": 0.9202
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6236,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 5.57. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1012",
+      "lat": 22.00677,
+      "lon": 80.4815,
+      "probability": 0.965,
+      "rf_baseline_probability": 0.9492,
+      "ensemble_divergence": 0.0158,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 5.58,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.5896,
+          "shap_impact": 1.0061
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6476,
+          "shap_impact": 0.5699
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 5.58. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_874",
+      "lat": 21.64394,
+      "lon": 79.6131,
+      "probability": 0.9646,
+      "rf_baseline_probability": 0.9611,
+      "ensemble_divergence": 0.0035,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 8.61,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.5467,
+          "shap_impact": 0.9302
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6485,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 8.61. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_412",
+      "lat": 22.00132,
+      "lon": 80.42509,
+      "probability": 0.9646,
+      "rf_baseline_probability": 0.9972,
+      "ensemble_divergence": 0.0326,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 4.04,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.699,
+          "shap_impact": 0.9302
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6336,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 4.04. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_583",
+      "lat": 21.67115,
+      "lon": 79.73893,
+      "probability": 0.9642,
+      "rf_baseline_probability": 0.9252,
+      "ensemble_divergence": 0.039,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 8.63,
+          "shap_impact": 1.0716
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.599,
+          "shap_impact": 0.9202
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5059,
+          "shap_impact": 0.4872
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 8.63. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_864",
+      "lat": 21.6888,
+      "lon": 79.66114,
+      "probability": 0.9639,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0361,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 1.39,
+          "shap_impact": 1.0886
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.8717,
+          "shap_impact": 0.996
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5556,
+          "shap_impact": 0.5699
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 1.39. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1025",
+      "lat": 21.94355,
+      "lon": 80.4164,
+      "probability": 0.9639,
+      "rf_baseline_probability": 0.9956,
+      "ensemble_divergence": 0.0317,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 4.5,
+          "shap_impact": 1.0765
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.6499,
+          "shap_impact": 0.996
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.568,
+          "shap_impact": 0.5699
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 4.50. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_676",
+      "lat": 21.96963,
+      "lon": 80.47357,
+      "probability": 0.9639,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0361,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 3.09,
+          "shap_impact": 1.0886
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.879,
+          "shap_impact": 0.996
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6247,
+          "shap_impact": 0.5699
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 3.09. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_472",
+      "lat": 21.96536,
+      "lon": 80.45482,
+      "probability": 0.9638,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0362,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 1.2,
+          "shap_impact": 1.1072
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.8334,
+          "shap_impact": 1.0061
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6866,
+          "shap_impact": 0.5699
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 1.20. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1297",
+      "lat": 21.35847,
+      "lon": 79.25122,
+      "probability": 0.9638,
+      "rf_baseline_probability": 0.9972,
+      "ensemble_divergence": 0.0334,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 6.0,
+          "shap_impact": 1.1072
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.6454,
+          "shap_impact": 1.0061
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5929,
+          "shap_impact": 0.5699
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 6.00. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_789",
+      "lat": 21.68563,
+      "lon": 79.69301,
+      "probability": 0.9638,
+      "rf_baseline_probability": 0.9786,
+      "ensemble_divergence": 0.0148,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 3.33,
+          "shap_impact": 1.1072
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.5534,
+          "shap_impact": 1.0061
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6129,
+          "shap_impact": 0.5699
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 3.33. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_341",
+      "lat": 21.59773,
+      "lon": 79.73742,
+      "probability": 0.9637,
+      "rf_baseline_probability": 0.9925,
+      "ensemble_divergence": 0.0288,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 5.58,
+          "shap_impact": 1.0716
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.7118,
+          "shap_impact": 0.9317
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5631,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 5.58. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_609",
+      "lat": 21.52152,
+      "lon": 79.75513,
+      "probability": 0.9637,
+      "rf_baseline_probability": 0.9963,
+      "ensemble_divergence": 0.0326,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 3.21,
+          "shap_impact": 1.0861
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.6047,
+          "shap_impact": 0.9317
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5767,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 3.21. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_369",
+      "lat": 21.40538,
+      "lon": 79.29369,
+      "probability": 0.9637,
+      "rf_baseline_probability": 0.998,
+      "ensemble_divergence": 0.0343,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 3.17,
+          "shap_impact": 1.0982
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.7937,
+          "shap_impact": 0.9317
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6578,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 3.17. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1026",
+      "lat": 21.52301,
+      "lon": 79.71132,
+      "probability": 0.9637,
+      "rf_baseline_probability": 0.9788,
+      "ensemble_divergence": 0.0151,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 4.47,
+          "shap_impact": 1.0982
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.61,
+          "shap_impact": 0.9317
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6701,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 4.47. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1110",
+      "lat": 21.35015,
+      "lon": 79.23084,
+      "probability": 0.9632,
+      "rf_baseline_probability": 0.9306,
+      "ensemble_divergence": 0.0326,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 7.74,
+          "shap_impact": 1.0982
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.6529,
+          "shap_impact": 0.996
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.524,
+          "shap_impact": 0.4977
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 7.74. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_576",
+      "lat": 21.99646,
+      "lon": 80.42428,
+      "probability": 0.9631,
+      "rf_baseline_probability": 0.9967,
+      "ensemble_divergence": 0.0336,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 3.67,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.6286,
+          "shap_impact": 0.9302
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5323,
+          "shap_impact": 0.4872
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 3.67. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_843",
+      "lat": 21.36414,
+      "lon": 79.26705,
+      "probability": 0.9631,
+      "rf_baseline_probability": 0.9821,
+      "ensemble_divergence": 0.019,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 5.16,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.782,
+          "shap_impact": 0.9302
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5129,
+          "shap_impact": 0.4872
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 5.16. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1221",
+      "lat": 22.01885,
+      "lon": 80.4263,
+      "probability": 0.9631,
+      "rf_baseline_probability": 0.9711,
+      "ensemble_divergence": 0.008,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 5.69,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.5504,
+          "shap_impact": 0.9302
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5445,
+          "shap_impact": 0.4872
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 5.69. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_483",
+      "lat": 21.66655,
+      "lon": 79.68181,
+      "probability": 0.9628,
+      "rf_baseline_probability": 0.9821,
+      "ensemble_divergence": 0.0193,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 4.07,
+          "shap_impact": 1.0982
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.8018,
+          "shap_impact": 0.9202
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5032,
+          "shap_impact": 0.4872
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 4.07. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_785",
+      "lat": 21.41202,
+      "lon": 79.2724,
+      "probability": 0.9626,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0374,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 0.77,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.7959,
+          "shap_impact": 0.9418
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6132,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 0.77. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1401",
+      "lat": 21.40229,
+      "lon": 79.25056,
+      "probability": 0.9626,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0374,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 1.91,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.7169,
+          "shap_impact": 0.9418
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.7174,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 1.91. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_603",
+      "lat": 21.42636,
+      "lon": 79.26552,
+      "probability": 0.9626,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0374,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 1.75,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.9352,
+          "shap_impact": 0.9418
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5928,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 1.75. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_668",
+      "lat": 21.40101,
+      "lon": 79.24102,
+      "probability": 0.9626,
+      "rf_baseline_probability": 0.9733,
+      "ensemble_divergence": 0.0107,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 2.93,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.8054,
+          "shap_impact": 0.9418
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6349,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 2.93. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_276",
+      "lat": 21.55233,
+      "lon": 79.75227,
+      "probability": 0.9626,
+      "rf_baseline_probability": 0.998,
+      "ensemble_divergence": 0.0354,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 1.14,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.7377,
+          "shap_impact": 0.9418
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6592,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 1.14. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1268",
+      "lat": 21.49351,
+      "lon": 79.71991,
+      "probability": 0.9626,
+      "rf_baseline_probability": 0.9743,
+      "ensemble_divergence": 0.0117,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 6.55,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.5808,
+          "shap_impact": 0.9418
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.7266,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 6.55. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_934",
+      "lat": 21.53072,
+      "lon": 79.78854,
+      "probability": 0.9626,
+      "rf_baseline_probability": 0.9918,
+      "ensemble_divergence": 0.0292,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 5.39,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.581,
+          "shap_impact": 0.9418
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6433,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 5.39. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_606",
+      "lat": 21.55341,
+      "lon": 79.69117,
+      "probability": 0.9626,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0374,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 5.8,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.6936,
+          "shap_impact": 0.9418
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6216,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 5.80. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_351",
+      "lat": 21.52873,
+      "lon": 79.7547,
+      "probability": 0.9626,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0374,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 2.48,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.8137,
+          "shap_impact": 0.9418
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.6288,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 2.48. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_235",
+      "lat": 21.40457,
+      "lon": 79.29286,
+      "probability": 0.9626,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0374,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 3.1,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.8952,
+          "shap_impact": 0.9302
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.7085,
+          "shap_impact": 0.5594
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 3.10. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_359",
+      "lat": 21.9736,
+      "lon": 80.41035,
+      "probability": 0.9619,
+      "rf_baseline_probability": 0.9899,
+      "ensemble_divergence": 0.028,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 3.94,
+          "shap_impact": 1.0923
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.6456,
+          "shap_impact": 0.996
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5327,
+          "shap_impact": 0.4977
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 3.94. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_752",
+      "lat": 22.0277,
+      "lon": 80.40975,
+      "probability": 0.9618,
+      "rf_baseline_probability": 0.9972,
+      "ensemble_divergence": 0.0354,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 7.42,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.706,
+          "shap_impact": 0.9302
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5386,
+          "shap_impact": 0.4872
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 7.42. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_1122",
+      "lat": 22.0135,
+      "lon": 80.43348,
+      "probability": 0.9618,
+      "rf_baseline_probability": 0.9972,
+      "ensemble_divergence": 0.0354,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 4.87,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.6891,
+          "shap_impact": 0.9302
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.548,
+          "shap_impact": 0.4872
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 4.87. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_15",
+      "lat": 21.45662,
+      "lon": 79.27274,
+      "probability": 0.9607,
+      "rf_baseline_probability": 0.9925,
+      "ensemble_divergence": 0.0318,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 5.17,
+          "shap_impact": 1.0716
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.6493,
+          "shap_impact": 0.9317
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5513,
+          "shap_impact": 0.4872
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 5.17. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_303",
+      "lat": 21.5826,
+      "lon": 79.81095,
+      "probability": 0.9607,
+      "rf_baseline_probability": 0.9609,
+      "ensemble_divergence": 0.0002,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 8.46,
+          "shap_impact": 1.0982
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.5898,
+          "shap_impact": 0.9317
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.4903,
+          "shap_impact": 0.4872
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 8.46. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_475",
+      "lat": 21.53898,
+      "lon": 79.79155,
+      "probability": 0.9607,
+      "rf_baseline_probability": 0.9756,
+      "ensemble_divergence": 0.0149,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 5.47,
+          "shap_impact": 1.0716
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.5999,
+          "shap_impact": 0.9317
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5123,
+          "shap_impact": 0.4872
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 5.47. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_513",
+      "lat": 22.02515,
+      "lon": 80.39909,
+      "probability": 0.9607,
+      "rf_baseline_probability": 0.9446,
+      "ensemble_divergence": 0.0161,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 7.9,
+          "shap_impact": 1.113
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.6253,
+          "shap_impact": 0.9302
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.4842,
+          "shap_impact": 0.4645
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 7.90. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_593",
+      "lat": 21.46301,
+      "lon": 79.27282,
+      "probability": 0.9607,
+      "rf_baseline_probability": 1.0,
+      "ensemble_divergence": 0.0393,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 5.87,
+          "shap_impact": 1.0861
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.7174,
+          "shap_impact": 0.9317
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5515,
+          "shap_impact": 0.4872
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 5.87. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    },
+    {
+      "zone_id": "ZONE_241",
+      "lat": 21.96203,
+      "lon": 80.41069,
+      "probability": 0.9599,
+      "rf_baseline_probability": 0.9963,
+      "ensemble_divergence": 0.0364,
+      "confidence_level": "HIGH",
+      "confidence_description": "XGBoost and Random Forest models strongly agree on high prospectivity.",
+      "top_contributing_features": [
+        {
+          "feature": "fault_proximity_km",
+          "display_name": "Proximity to Known Fault / Belt Axis (km)",
+          "value": 4.03,
+          "shap_impact": 1.1034
+        },
+        {
+          "feature": "ferrous_mineral_index",
+          "display_name": "Ferrous Mineral Index (SWIR1/NIR)",
+          "value": 1.618,
+          "shap_impact": 1.0061
+        },
+        {
+          "feature": "clay_mineral_ratio",
+          "display_name": "Clay Mineral Ratio (SWIR1/SWIR2)",
+          "value": 1.5482,
+          "shap_impact": 0.4977
+        }
+      ],
+      "explanation_text": "Proximity to Known Fault / Belt Axis (km) value of 4.03. High ferrous mineral concentration detected in SWIR reflectance. Hydrothermal clay alteration envelope surrounding ore horizon."
+    }
+  ]
+}

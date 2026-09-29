@@ -1,0 +1,26 @@
+{
+  "region": "--region",
+  "bbox": [
+    79.0,
+    21.3,
+    80.5,
+    22.1
+  ],
+  "data_source": "Pre-computed Sentinel-2 L2A & SRTM DEM dataset (Balaghat-Nagpur Mn Belt)",
+  "sample_count": 1500,
+  "features": [
+    "pixel_id",
+    "lon",
+    "lat",
+    "iron_oxide_ratio",
+    "ferrous_mineral_index",
+    "clay_mineral_ratio",
+    "ndvi",
+    "mn_indicator",
+    "elevation",
+    "slope",
+    "aspect",
+    "fault_proximity_km"
+  ],
+  "gee_active": false
+}

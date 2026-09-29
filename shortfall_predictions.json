@@ -1,0 +1,335 @@
+{
+  "forecast_period": "2024-12",
+  "metadata": {
+    "title": "Production Shortfall Forecast (Mode 1: Public Climate Observations)",
+    "observation_period": "2024-12",
+    "forecast_period": "2024-12",
+    "climate_source": "ECMWF ERA5-Land Reanalysis (Copernicus)",
+    "spatial_coverage": "Balaghat & Nagpur-Bhandara Manganese Belt",
+    "telemetry_status": "Awaiting Authenticated MOIL SCADA/ERP Telemetry",
+    "disclaimer": "Trained on public historical weather and IBM production targets. Use What-If Simulator for operational telemetry testing."
+  },
+  "model_metrics": {
+    "model_type": "XGBoost Regressor (Public Climate & Production Constraints)",
+    "training_data_provenance": "ECMWF ERA5-Land Reanalysis (2022-2024) + IBM Mineral Benchmarks",
+    "total_historical_observations": 360,
+    "feature_count": 5,
+    "features": [
+      "rainfall_mm",
+      "soil_moisture_pct",
+      "land_temperature_c",
+      "planned_output_tonnes",
+      "ore_grade_pct"
+    ],
+    "train_r2": 0.9849,
+    "train_mae": 0.725,
+    "cv_5fold_r2_mean": 0.9535,
+    "cv_5fold_r2_std": 0.0183,
+    "cv_5fold_mae_mean": 1.019,
+    "cv_5fold_rmse_mean": 1.43,
+    "data_mode": "MODE 1: PUBLIC-DATA DEMONSTRATION"
+  },
+  "total_mines_forecasted": 10,
+  "mine_forecasts": [
+    {
+      "mine_id": "MINE_01",
+      "mine_name": "Balaghat (Bharveli)",
+      "mine_type": "Underground",
+      "year_month": "2024-12",
+      "planned_output_tonnes": 25000.0,
+      "actual_output_tonnes": 25195.0,
+      "predicted_shortfall_tonnes": -195.0,
+      "predicted_shortfall_pct": -0.7799999713897705,
+      "shortfall_risk_category": "LOW",
+      "confidence_level": "HIGH",
+      "provenance": {
+        "source": "ECMWF ERA5-Land Reanalysis Climate + IBM Quotas",
+        "status": "REAL_PUBLIC_DATA",
+        "telemetry_present": false
+      },
+      "top_driving_factor": {
+        "feature": "nominal",
+        "current_value": 0.0,
+        "shap_impact": 0.0
+      },
+      "corrective_action": {
+        "cause": "Nominal Operation",
+        "evidence": "Parameters within nominal operating range.",
+        "action": "Maintain scheduled underground stope cycle & skip lubrication",
+        "protocol": "Routine preventive maintenance."
+      },
+      "recommended_corrective_action": "Maintain scheduled underground stope cycle & skip lubrication",
+      "action_details": "Routine preventive maintenance."
+    },
+    {
+      "mine_id": "MINE_02",
+      "mine_name": "Dongri Buzurg",
+      "mine_type": "Opencast",
+      "year_month": "2024-12",
+      "planned_output_tonnes": 22000.0,
+      "actual_output_tonnes": 22114.4,
+      "predicted_shortfall_tonnes": -114.4,
+      "predicted_shortfall_pct": -0.5199999809265137,
+      "shortfall_risk_category": "LOW",
+      "confidence_level": "HIGH",
+      "provenance": {
+        "source": "ECMWF ERA5-Land Reanalysis Climate + IBM Quotas",
+        "status": "REAL_PUBLIC_DATA",
+        "telemetry_present": false
+      },
+      "top_driving_factor": {
+        "feature": "ore_grade_pct",
+        "current_value": 33.59,
+        "shap_impact": 1.341
+      },
+      "corrective_action": {
+        "cause": "Manganese Grade Dilution",
+        "evidence": "Bench waste contamination diluted extracted ore to 33.6% Mn.",
+        "action": "Enforce Selective Laser-Guided Stripping & Magnetic Beneficiation",
+        "protocol": "Enforce strict geological boundary marking on benches. Divert sub-grade material to high-intensity magnetic separation circuits."
+      },
+      "recommended_corrective_action": "Enforce Selective Laser-Guided Stripping & Magnetic Beneficiation",
+      "action_details": "Enforce strict geological boundary marking on benches. Divert sub-grade material to high-intensity magnetic separation circuits."
+    },
+    {
+      "mine_id": "MINE_03",
+      "mine_name": "Tirodi",
+      "mine_type": "Opencast",
+      "year_month": "2024-12",
+      "planned_output_tonnes": 18000.0,
+      "actual_output_tonnes": 18084.6,
+      "predicted_shortfall_tonnes": -84.6,
+      "predicted_shortfall_pct": -0.4699999988079071,
+      "shortfall_risk_category": "LOW",
+      "confidence_level": "HIGH",
+      "provenance": {
+        "source": "ECMWF ERA5-Land Reanalysis Climate + IBM Quotas",
+        "status": "REAL_PUBLIC_DATA",
+        "telemetry_present": false
+      },
+      "top_driving_factor": {
+        "feature": "ore_grade_pct",
+        "current_value": 33.59,
+        "shap_impact": 1.331
+      },
+      "corrective_action": {
+        "cause": "Manganese Grade Dilution",
+        "evidence": "Bench waste contamination diluted extracted ore to 33.6% Mn.",
+        "action": "Enforce Selective Laser-Guided Stripping & Magnetic Beneficiation",
+        "protocol": "Enforce strict geological boundary marking on benches. Divert sub-grade material to high-intensity magnetic separation circuits."
+      },
+      "recommended_corrective_action": "Enforce Selective Laser-Guided Stripping & Magnetic Beneficiation",
+      "action_details": "Enforce strict geological boundary marking on benches. Divert sub-grade material to high-intensity magnetic separation circuits."
+    },
+    {
+      "mine_id": "MINE_04",
+      "mine_name": "Chikla",
+      "mine_type": "Underground",
+      "year_month": "2024-12",
+      "planned_output_tonnes": 16000.0,
+      "actual_output_tonnes": 16070.4,
+      "predicted_shortfall_tonnes": -70.4,
+      "predicted_shortfall_pct": -0.4399999976158142,
+      "shortfall_risk_category": "LOW",
+      "confidence_level": "HIGH",
+      "provenance": {
+        "source": "ECMWF ERA5-Land Reanalysis Climate + IBM Quotas",
+        "status": "REAL_PUBLIC_DATA",
+        "telemetry_present": false
+      },
+      "top_driving_factor": {
+        "feature": "nominal",
+        "current_value": 0.0,
+        "shap_impact": 0.0
+      },
+      "corrective_action": {
+        "cause": "Nominal Operation",
+        "evidence": "Parameters within nominal operating range.",
+        "action": "Maintain scheduled underground stope cycle & skip lubrication",
+        "protocol": "Routine preventive maintenance."
+      },
+      "recommended_corrective_action": "Maintain scheduled underground stope cycle & skip lubrication",
+      "action_details": "Routine preventive maintenance."
+    },
+    {
+      "mine_id": "MINE_05",
+      "mine_name": "Kandri",
+      "mine_type": "Underground",
+      "year_month": "2024-12",
+      "planned_output_tonnes": 15000.0,
+      "actual_output_tonnes": 15066.0,
+      "predicted_shortfall_tonnes": -66.0,
+      "predicted_shortfall_pct": -0.4399999976158142,
+      "shortfall_risk_category": "LOW",
+      "confidence_level": "HIGH",
+      "provenance": {
+        "source": "ECMWF ERA5-Land Reanalysis Climate + IBM Quotas",
+        "status": "REAL_PUBLIC_DATA",
+        "telemetry_present": false
+      },
+      "top_driving_factor": {
+        "feature": "nominal",
+        "current_value": 0.0,
+        "shap_impact": 0.0
+      },
+      "corrective_action": {
+        "cause": "Nominal Operation",
+        "evidence": "Parameters within nominal operating range.",
+        "action": "Maintain scheduled underground stope cycle & skip lubrication",
+        "protocol": "Routine preventive maintenance."
+      },
+      "recommended_corrective_action": "Maintain scheduled underground stope cycle & skip lubrication",
+      "action_details": "Routine preventive maintenance."
+    },
+    {
+      "mine_id": "MINE_06",
+      "mine_name": "Ukwa",
+      "mine_type": "Underground",
+      "year_month": "2024-12",
+      "planned_output_tonnes": 14000.0,
+      "actual_output_tonnes": 14081.2,
+      "predicted_shortfall_tonnes": -81.2,
+      "predicted_shortfall_pct": -0.5799999833106995,
+      "shortfall_risk_category": "LOW",
+      "confidence_level": "HIGH",
+      "provenance": {
+        "source": "ECMWF ERA5-Land Reanalysis Climate + IBM Quotas",
+        "status": "REAL_PUBLIC_DATA",
+        "telemetry_present": false
+      },
+      "top_driving_factor": {
+        "feature": "nominal",
+        "current_value": 0.0,
+        "shap_impact": 0.0
+      },
+      "corrective_action": {
+        "cause": "Nominal Operation",
+        "evidence": "Parameters within nominal operating range.",
+        "action": "Maintain scheduled underground stope cycle & skip lubrication",
+        "protocol": "Routine preventive maintenance."
+      },
+      "recommended_corrective_action": "Maintain scheduled underground stope cycle & skip lubrication",
+      "action_details": "Routine preventive maintenance."
+    },
+    {
+      "mine_id": "MINE_07",
+      "mine_name": "Munsar",
+      "mine_type": "Underground",
+      "year_month": "2024-12",
+      "planned_output_tonnes": 13000.0,
+      "actual_output_tonnes": 13057.2,
+      "predicted_shortfall_tonnes": -57.2,
+      "predicted_shortfall_pct": -0.4399999976158142,
+      "shortfall_risk_category": "LOW",
+      "confidence_level": "HIGH",
+      "provenance": {
+        "source": "ECMWF ERA5-Land Reanalysis Climate + IBM Quotas",
+        "status": "REAL_PUBLIC_DATA",
+        "telemetry_present": false
+      },
+      "top_driving_factor": {
+        "feature": "nominal",
+        "current_value": 0.0,
+        "shap_impact": 0.0
+      },
+      "corrective_action": {
+        "cause": "Nominal Operation",
+        "evidence": "Parameters within nominal operating range.",
+        "action": "Maintain scheduled underground stope cycle & skip lubrication",
+        "protocol": "Routine preventive maintenance."
+      },
+      "recommended_corrective_action": "Maintain scheduled underground stope cycle & skip lubrication",
+      "action_details": "Routine preventive maintenance."
+    },
+    {
+      "mine_id": "MINE_08",
+      "mine_name": "Gumgaon",
+      "mine_type": "Underground",
+      "year_month": "2024-12",
+      "planned_output_tonnes": 11000.0,
+      "actual_output_tonnes": 11063.8,
+      "predicted_shortfall_tonnes": -63.8,
+      "predicted_shortfall_pct": -0.5799999833106995,
+      "shortfall_risk_category": "LOW",
+      "confidence_level": "HIGH",
+      "provenance": {
+        "source": "ECMWF ERA5-Land Reanalysis Climate + IBM Quotas",
+        "status": "REAL_PUBLIC_DATA",
+        "telemetry_present": false
+      },
+      "top_driving_factor": {
+        "feature": "nominal",
+        "current_value": 0.0,
+        "shap_impact": 0.0
+      },
+      "corrective_action": {
+        "cause": "Nominal Operation",
+        "evidence": "Parameters within nominal operating range.",
+        "action": "Maintain scheduled underground stope cycle & skip lubrication",
+        "protocol": "Routine preventive maintenance."
+      },
+      "recommended_corrective_action": "Maintain scheduled underground stope cycle & skip lubrication",
+      "action_details": "Routine preventive maintenance."
+    },
+    {
+      "mine_id": "MINE_09",
+      "mine_name": "Beldongri",
+      "mine_type": "Underground",
+      "year_month": "2024-12",
+      "planned_output_tonnes": 9000.0,
+      "actual_output_tonnes": 9039.6,
+      "predicted_shortfall_tonnes": -39.6,
+      "predicted_shortfall_pct": -0.4399999976158142,
+      "shortfall_risk_category": "LOW",
+      "confidence_level": "HIGH",
+      "provenance": {
+        "source": "ECMWF ERA5-Land Reanalysis Climate + IBM Quotas",
+        "status": "REAL_PUBLIC_DATA",
+        "telemetry_present": false
+      },
+      "top_driving_factor": {
+        "feature": "nominal",
+        "current_value": 0.0,
+        "shap_impact": 0.0
+      },
+      "corrective_action": {
+        "cause": "Nominal Operation",
+        "evidence": "Parameters within nominal operating range.",
+        "action": "Maintain scheduled underground stope cycle & skip lubrication",
+        "protocol": "Routine preventive maintenance."
+      },
+      "recommended_corrective_action": "Maintain scheduled underground stope cycle & skip lubrication",
+      "action_details": "Routine preventive maintenance."
+    },
+    {
+      "mine_id": "MINE_10",
+      "mine_name": "Sitapatore / Sukli",
+      "mine_type": "Opencast",
+      "year_month": "2024-12",
+      "planned_output_tonnes": 7000.0,
+      "actual_output_tonnes": 7032.9,
+      "predicted_shortfall_tonnes": -32.9,
+      "predicted_shortfall_pct": -0.4699999988079071,
+      "shortfall_risk_category": "LOW",
+      "confidence_level": "HIGH",
+      "provenance": {
+        "source": "ECMWF ERA5-Land Reanalysis Climate + IBM Quotas",
+        "status": "REAL_PUBLIC_DATA",
+        "telemetry_present": false
+      },
+      "top_driving_factor": {
+        "feature": "ore_grade_pct",
+        "current_value": 33.59,
+        "shap_impact": 1.331
+      },
+      "corrective_action": {
+        "cause": "Manganese Grade Dilution",
+        "evidence": "Bench waste contamination diluted extracted ore to 33.6% Mn.",
+        "action": "Enforce Selective Laser-Guided Stripping & Magnetic Beneficiation",
+        "protocol": "Enforce strict geological boundary marking on benches. Divert sub-grade material to high-intensity magnetic separation circuits."
+      },
+      "recommended_corrective_action": "Enforce Selective Laser-Guided Stripping & Magnetic Beneficiation",
+      "action_details": "Enforce strict geological boundary marking on benches. Divert sub-grade material to high-intensity magnetic separation circuits."
+    }
+  ]
+}

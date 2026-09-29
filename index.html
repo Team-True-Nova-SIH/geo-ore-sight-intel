@@ -1,0 +1,2259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIH26009 — Geo Ore Sight Intel | AI Manganese Exploration Intelligence Platform</title>
+    <meta name="description" content="AI-powered geospatial intelligence platform for manganese mineral exploration across India. SIH 2026 Finals - Ministry of Steel / MOIL Ltd.">
+
+    <!-- Tab Icon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50' y='68' font-size='50' font-weight='bold' font-family='sans-serif' text-anchor='middle' fill='%2338bdf8'>Mn</text></svg>">
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* ============================================================
+           ROOT DESIGN TOKENS — Premium Dark Theme
+        ============================================================ */
+        :root {
+            --bg-primary: #0a0e1a;
+            --bg-secondary: #111827;
+            --bg-card: #1a2236;
+            --bg-card-hover: #1e2a42;
+            --bg-glass: rgba(17, 24, 39, 0.85);
+            --bg-glass-light: rgba(30, 42, 66, 0.7);
+            --border: rgba(56, 189, 248, 0.12);
+            --border-active: rgba(56, 189, 248, 0.35);
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.25);
+            --accent-bright: #7dd3fc;
+            --accent-orange: #f59e0b;
+            --accent-green: #34d399;
+            --accent-red: #f87171;
+            --accent-purple: #a78bfa;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --high: #ef4444;
+            --medium: #f59e0b;
+            --low: #22c55e;
+            --font-body: 'Inter', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --radius: 10px;
+            --radius-sm: 6px;
+            --radius-lg: 14px;
+            --shadow: 0 4px 24px rgba(0,0,0,0.4);
+            --shadow-glow: 0 0 20px rgba(56, 189, 248, 0.15);
+        }
+
+        /* ============================================================
+           RESET & BASE
+        ============================================================ */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--bg-secondary); }
+        ::-webkit-scrollbar-thumb { background: var(--text-muted); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+        /* ============================================================
+           HEADER / TOP NAV BAR
+        ============================================================ */
+        .top-bar {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, #0f1729 100%);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            height: 52px;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 100;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-right: 24px;
+        }
+        .brand-logo {
+            width: 34px;
+            height: 34px;
+            background: linear-gradient(135deg, var(--accent) 0%, #0ea5e9 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 14px;
+            color: #0a0e1a;
+            box-shadow: 0 0 16px rgba(56, 189, 248, 0.3);
+        }
+        .brand-text h1 {
+            font-size: 1.05rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .brand-text p {
+            font-size: 0.62rem;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: flex;
+            gap: 2px;
+            flex: 1;
+        }
+        .nav-tab {
+            padding: 14px 18px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            position: relative;
+            transition: all 0.3s ease;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
+        }
+        .nav-tab:hover { color: var(--text-primary); background: rgba(56, 189, 248, 0.05); }
+        .nav-tab.active {
+            color: var(--accent);
+            background: rgba(56, 189, 248, 0.08);
+        }
+        .nav-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 8px;
+            right: 8px;
+            height: 2px;
+            background: var(--accent);
+            border-radius: 2px 2px 0 0;
+            box-shadow: 0 0 8px var(--accent-glow);
+        }
+
+        /* Header Right */
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: auto;
+        }
+        .status-pill {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            border: 1px solid;
+        }
+        .status-live {
+            background: rgba(34, 197, 94, 0.1);
+            border-color: rgba(34, 197, 94, 0.3);
+            color: var(--accent-green);
+        }
+        .status-live .dot {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: var(--accent-green);
+            animation: pulse-dot 2s infinite;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; box-shadow: 0 0 4px var(--accent-green); }
+            50% { opacity: 0.4; box-shadow: 0 0 8px var(--accent-green); }
+        }
+        .region-select {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            padding: 5px 10px;
+            border-radius: var(--radius-sm);
+            font-size: 0.75rem;
+            font-family: var(--font-body);
+            cursor: pointer;
+        }
+
+        /* ============================================================
+           MAIN LAYOUT — 3-Column
+        ============================================================ */
+        .app-main {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+            height: calc(100vh - 52px);
+        }
+
+        /* LEFT ICON SIDEBAR (Video layout) */
+        .sidebar-icons {
+            width: 50px;
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 16px;
+            gap: 20px;
+            flex-shrink: 0;
+            z-index: 50;
+        }
+        .sidebar-icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1.1rem;
+        }
+        .sidebar-icon:hover { color: var(--text-primary); background: rgba(56, 189, 248, 0.1); }
+        .sidebar-icon.active { color: var(--accent); background: rgba(56, 189, 248, 0.15); border-left: 2px solid var(--accent); }
+
+        /* LEFT PANEL */
+        .panel-left {
+            width: 340px;
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            flex-shrink: 0;
+            transition: width 0.3s ease;
+        }
+
+        /* CENTER MAP */
+        .panel-center {
+            flex: 1;
+            position: relative;
+            background: var(--bg-primary);
+        }
+        #map {
+            width: 100%;
+            height: 100%;
+            background: var(--bg-primary);
+        }
+        /* Dark Leaflet tiles */
+        .leaflet-container { background: var(--bg-primary) !important; }
+        .leaflet-tile-pane { filter: none; }
+        .leaflet-control-zoom a {
+            background: var(--bg-card) !important;
+            color: var(--text-primary) !important;
+            border-color: var(--border) !important;
+        }
+        .leaflet-popup-content-wrapper {
+            background: var(--bg-card) !important;
+            color: var(--text-primary) !important;
+            border-radius: var(--radius) !important;
+            box-shadow: var(--shadow) !important;
+            border: 1px solid var(--border) !important;
+        }
+        .leaflet-popup-tip { background: var(--bg-card) !important; }
+
+        /* RIGHT PANEL */
+        .panel-right {
+            width: 380px;
+            background: var(--bg-secondary);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            flex-shrink: 0;
+        }
+
+        /* ============================================================
+           PANEL COMPONENTS
+        ============================================================ */
+        .section {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+        .section-title {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            letter-spacing: 0.3px;
+        }
+        .section-title .badge-sm {
+            font-size: 0.62rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+        .badge-blue { background: rgba(56, 189, 248, 0.15); color: var(--accent); border: 1px solid rgba(56, 189, 248, 0.25); }
+        .badge-green { background: rgba(34, 197, 94, 0.12); color: var(--accent-green); border: 1px solid rgba(34, 197, 94, 0.25); }
+        .badge-orange { background: rgba(245, 158, 11, 0.12); color: var(--accent-orange); border: 1px solid rgba(245, 158, 11, 0.25); }
+        .badge-red { background: rgba(248, 113, 113, 0.12); color: var(--accent-red); border: 1px solid rgba(248, 113, 113, 0.25); }
+
+        /* KPI Cards */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+        .kpi-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 10px 12px;
+            transition: all 0.25s ease;
+        }
+        .kpi-card:hover {
+            border-color: var(--border-active);
+            box-shadow: var(--shadow-glow);
+            transform: translateY(-1px);
+        }
+        .kpi-card label {
+            font-size: 0.62rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+        }
+        .kpi-card .val {
+            font-size: 1rem;
+            font-weight: 800;
+            margin-top: 2px;
+            font-family: var(--font-mono);
+        }
+        .val-blue { color: var(--accent); }
+        .val-green { color: var(--accent-green); }
+        .val-orange { color: var(--accent-orange); }
+        .val-red { color: var(--accent-red); }
+
+        /* Prospectivity Gauge */
+        .gauge-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 16px 0;
+        }
+        .gauge-ring {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gauge-ring svg {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            transform: rotate(-90deg);
+        }
+        .gauge-ring .score-val {
+            font-size: 2.2rem;
+            font-weight: 900;
+            font-family: var(--font-mono);
+            color: var(--accent);
+            z-index: 2;
+        }
+        .gauge-ring .score-sub {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        .gauge-label {
+            margin-top: 8px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            padding: 4px 16px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+        }
+        .gauge-high { background: rgba(34, 197, 94, 0.15); color: var(--accent-green); border: 1px solid rgba(34,197,94,0.3); }
+        .gauge-medium { background: rgba(245, 158, 11, 0.15); color: var(--accent-orange); border: 1px solid rgba(245,158,11,0.3); }
+        .gauge-low { background: rgba(248, 113, 113, 0.15); color: var(--accent-red); border: 1px solid rgba(248,113,113,0.3); }
+
+        /* Feature Driver List */
+        .driver-list { list-style: none; }
+        .driver-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 7px 0;
+            border-bottom: 1px solid rgba(56, 189, 248, 0.06);
+            font-size: 0.78rem;
+        }
+        .driver-name { color: var(--text-secondary); font-weight: 500; }
+        .driver-val {
+            font-family: var(--font-mono);
+            font-weight: 600;
+            font-size: 0.75rem;
+        }
+        .driver-positive { color: var(--accent-green); }
+        .driver-negative { color: var(--accent-red); }
+
+        /* Radar Chart */
+        .radar-container {
+            width: 100%;
+            height: 200px;
+            position: relative;
+        }
+
+        /* Mine List Cards */
+        .mine-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 12px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .mine-card:hover {
+            border-color: var(--accent);
+            box-shadow: var(--shadow-glow);
+            transform: translateY(-1px);
+        }
+        .mine-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        .mine-card-name {
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+        .risk-badge {
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .risk-high { background: rgba(239, 68, 68, 0.15); color: var(--accent-red); border: 1px solid rgba(239,68,68,0.25); }
+        .risk-medium { background: rgba(245, 158, 11, 0.15); color: var(--accent-orange); border: 1px solid rgba(245,158,11,0.25); }
+        .risk-low { background: rgba(34, 197, 94, 0.15); color: var(--accent-green); border: 1px solid rgba(34,197,94,0.25); }
+        .mine-card-meta {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+        .mine-card-driver {
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+        }
+
+        /* Recommendation Box */
+        .rec-box {
+            background: var(--bg-card);
+            border-left: 3px solid var(--accent);
+            padding: 10px 12px;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin-top: 8px;
+            font-size: 0.78rem;
+            line-height: 1.5;
+            color: var(--text-secondary);
+        }
+        .rec-box strong {
+            color: var(--accent);
+            display: block;
+            margin-bottom: 4px;
+            font-size: 0.8rem;
+        }
+
+        /* ============================================================
+           WHAT-IF SIMULATOR
+        ============================================================ */
+        .simulator-container { padding: 12px 0; }
+        .slider-group {
+            margin-bottom: 20px;
+        }
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .slider-label span {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .slider-value {
+            font-size: 1.1rem;
+            font-weight: 800;
+            font-family: var(--font-mono);
+            color: var(--accent);
+        }
+        .slider-track {
+            width: 100%;
+            height: 8px;
+            border-radius: 4px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            position: relative;
+            cursor: pointer;
+        }
+        .slider-fill {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+            transition: width 0.3s ease;
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+        .slider-thumb {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 3px solid var(--bg-primary);
+            box-shadow: 0 0 12px var(--accent-glow);
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            cursor: grab;
+            transition: box-shadow 0.2s;
+        }
+        .slider-thumb:hover {
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+        }
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 8px;
+            border-radius: 4px;
+            background: var(--bg-card);
+            outline: none;
+            border: 1px solid var(--border);
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 3px solid var(--bg-primary);
+            box-shadow: 0 0 12px var(--accent-glow);
+            cursor: grab;
+        }
+        input[type="range"]::-webkit-slider-thumb:hover {
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+        }
+
+        .sim-result {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 14px;
+            margin-top: 12px;
+        }
+        .sim-result-title {
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            color: var(--accent);
+        }
+        .sim-result-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 0;
+            font-size: 0.78rem;
+            border-bottom: 1px dashed rgba(56,189,248,0.08);
+        }
+        .sim-result-row:last-child { border: none; }
+
+        /* ============================================================
+           CHATBOT
+        ============================================================ */
+        .chat-container { display: flex; flex-direction: column; height: 100%; }
+        .chat-messages {
+            flex: 1;
+            padding: 12px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .chat-bubble {
+            max-width: 88%;
+            padding: 10px 14px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            line-height: 1.5;
+        }
+        .chat-bubble.bot {
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            align-self: flex-start;
+            border: 1px solid var(--border);
+        }
+        .chat-bubble.user {
+            background: linear-gradient(135deg, var(--accent), #0ea5e9);
+            color: #0a0e1a;
+            align-self: flex-end;
+            font-weight: 500;
+        }
+        .chat-input-box {
+            display: flex;
+            gap: 6px;
+            padding: 10px 12px;
+            border-top: 1px solid var(--border);
+            background: var(--bg-secondary);
+        }
+        .chat-input-box input {
+            flex: 1;
+            padding: 9px 12px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            color: var(--text-primary);
+            font-size: 0.8rem;
+            font-family: var(--font-body);
+            outline: none;
+        }
+        .chat-input-box input:focus { border-color: var(--accent); box-shadow: 0 0 8px var(--accent-glow); }
+        .chat-input-box button {
+            padding: 9px 16px;
+            background: linear-gradient(135deg, var(--accent), #0ea5e9);
+            color: #0a0e1a;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            font-size: 0.78rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .chat-input-box button:hover { transform: translateY(-1px); box-shadow: 0 4px 12px var(--accent-glow); }
+
+        .quick-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 8px 12px;
+            border-top: 1px solid var(--border);
+        }
+        .chip-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 4px 10px;
+            font-size: 0.68rem;
+            font-weight: 600;
+            color: var(--accent);
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .chip-btn:hover { background: rgba(56, 189, 248, 0.1); border-color: var(--accent); transform: translateY(-1px); }
+
+        /* Chart container */
+        .chart-box { height: 170px; position: relative; margin-top: 6px; }
+
+        /* Map Legend */
+        .map-legend {
+            position: absolute;
+            bottom: 24px;
+            right: 16px;
+            background: var(--bg-glass);
+            backdrop-filter: blur(16px);
+            padding: 12px 14px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            font-size: 0.72rem;
+            z-index: 999;
+            box-shadow: var(--shadow);
+        }
+        .map-legend h4 {
+            font-size: 0.75rem;
+            color: var(--accent);
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin: 3px 0;
+            color: var(--text-secondary);
+        }
+        .legend-dot {
+            width: 10px; height: 10px;
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        /* Map Info Overlay (top left) */
+        .map-overlay-info {
+            position: absolute;
+            top: 12px;
+            left: 54px;
+            background: var(--bg-glass);
+            backdrop-filter: blur(16px);
+            padding: 10px 16px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            z-index: 999;
+            box-shadow: var(--shadow);
+        }
+        .map-overlay-info .overlay-title {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .map-overlay-info .overlay-sub {
+            font-size: 0.68rem;
+            color: var(--text-muted);
+        }
+
+        /* Backtest */
+        .backtest-box {
+            background: var(--bg-card);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            padding: 12px;
+            border-radius: var(--radius);
+            margin-top: 10px;
+        }
+        .backtest-box.failed {
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+        .backtest-box strong {
+            font-size: 0.85rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* Tab Content Visibility */
+        .tab-page { display: none; flex-direction: column; height: 100%; }
+        .tab-page.active { display: flex; }
+
+        /* Sub-tabs inside left panel */
+        .sub-tabs {
+            display: flex;
+            border-bottom: 1px solid var(--border);
+            background: rgba(0,0,0,0.2);
+        }
+        .sub-tab {
+            flex: 1;
+            padding: 9px 4px;
+            border: none;
+            background: transparent;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        .sub-tab.active {
+            color: var(--accent);
+            background: rgba(56, 189, 248, 0.06);
+            border-bottom: 2px solid var(--accent);
+        }
+
+        /* ML Model Cards */
+        .ml-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 12px 14px;
+            margin-bottom: 8px;
+        }
+        .ml-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        .ml-card-name { font-weight: 700; font-size: 0.85rem; }
+        .ml-bar-container {
+            background: rgba(56,189,248,0.1);
+            height: 6px;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 6px;
+        }
+        .ml-bar-fill {
+            height: 100%;
+            border-radius: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-green));
+            transition: width 0.6s ease;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(135deg, var(--accent), #0ea5e9);
+            color: #0a0e1a;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            font-size: 0.82rem;
+            cursor: pointer;
+            transition: all 0.25s;
+            letter-spacing: 0.3px;
+        }
+        .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 4px 16px var(--accent-glow); }
+
+        .btn-outline {
+            width: 100%;
+            padding: 9px;
+            background: transparent;
+            color: var(--accent);
+            border: 1px solid var(--border-active);
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+        .btn-outline:hover { background: rgba(56, 189, 248, 0.08); }
+
+        /* Select */
+        select.styled-select {
+            width: 100%;
+            padding: 8px 10px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            border-radius: var(--radius-sm);
+            font-size: 0.78rem;
+            font-family: var(--font-body);
+            cursor: pointer;
+            margin: 4px 0 10px 0;
+        }
+
+        /* Search / Filter */
+        .search-box {
+            width: 100%;
+            padding: 8px 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            border-radius: var(--radius-sm);
+            font-size: 0.78rem;
+            font-family: var(--font-body);
+            outline: none;
+            margin-bottom: 10px;
+        }
+        .search-box:focus { border-color: var(--accent); box-shadow: 0 0 8px var(--accent-glow); }
+        .search-box::placeholder { color: var(--text-muted); }
+
+        /* Geology Layers */
+        .layer-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 0;
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+        .layer-toggle input[type="checkbox"] {
+            accent-color: var(--accent);
+        }
+
+        /* Animations */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in { animation: fadeIn 0.4s ease forwards; }
+        @keyframes slideRight { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: translateX(0); } }
+        .slide-in { animation: slideRight 0.35s ease forwards; }
+
+        /* Geology sidebar icons */
+        .geo-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 8px 0;
+        }
+        .geo-nav-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .geo-nav-item:hover {
+            background: rgba(56,189,248,0.06);
+            color: var(--text-primary);
+        }
+        .geo-nav-item.active {
+            background: rgba(56,189,248,0.1);
+            color: var(--accent);
+            border-left: 2px solid var(--accent);
+        }
+
+        /* Data Provenance & Scientific Integrity Styles */
+        .prov-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 12px;
+            margin-bottom: 10px;
+            transition: all 0.2s;
+        }
+        .prov-card:hover {
+            border-color: var(--border-active);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
+        .prov-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        .prov-title {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .badge-real {
+            background: rgba(34, 197, 94, 0.15);
+            color: #4ade80;
+            border: 1px solid rgba(34, 197, 94, 0.35);
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+        }
+        .badge-demo {
+            background: rgba(245, 158, 11, 0.15);
+            color: #fbbf24;
+            border: 1px solid rgba(245, 158, 11, 0.35);
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+        }
+        .badge-gap {
+            background: rgba(239, 68, 68, 0.15);
+            color: #f87171;
+            border: 1px solid rgba(239, 68, 68, 0.35);
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+        }
+        .prov-meta-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.72rem;
+            padding: 2px 0;
+            color: var(--text-secondary);
+        }
+        .prov-meta-val {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- ============================================================
+         RBAC LOGIN OVERLAY
+    ============================================================ -->
+    <div id="rbac-overlay" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: var(--bg-primary); z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div class="brand" style="margin-bottom: 2rem;">
+            <div class="brand-logo" style="width: 60px; height: 60px; font-size: 28px; line-height: 60px; text-align: center;">Mn</div>
+            <div class="brand-text" style="text-align: center;">
+                <h1 style="font-size: 1.5rem;">GEO ORE SIGHT INTEL</h1>
+                <p>SIH26009 • Authorized Access Only</p>
+            </div>
+        </div>
+        <div style="background: var(--bg-card); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border); width: 320px; box-shadow: var(--shadow);">
+            <h3 style="margin-bottom: 1rem; color: var(--text-primary);">Secure Login</h3>
+            <input type="text" id="login-username" placeholder="Username" style="width: 100%; padding: 10px; margin-bottom: 10px; background: var(--bg-secondary); border: 1px solid var(--border); color: white; border-radius: var(--radius-sm); box-sizing: border-box;" />
+            <input type="password" id="login-password" placeholder="Password" style="width: 100%; padding: 10px; margin-bottom: 15px; background: var(--bg-secondary); border: 1px solid var(--border); color: white; border-radius: var(--radius-sm); box-sizing: border-box;" />
+            <p id="login-error" style="color: var(--accent-red); font-size: 0.75rem; display: none; margin-bottom: 10px;">Invalid credentials</p>
+            <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="performLogin()">Login via RBAC</button>
+            <div style="margin-top: 15px; font-size: 0.7rem; color: var(--text-muted); text-align: center;">
+                <strong>Demo Roles:</strong><br>
+                admin / admin (Full Access)<br>
+                geologist / geo123 (Exploration Only)<br>
+                manager / moil123 (Operations Only)
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         TOP NAVIGATION BAR
+    ============================================================ -->
+    <div class="top-bar">
+        <div class="brand">
+            <div class="brand-logo">Mn</div>
+            <div class="brand-text">
+                <h1>GEO ORE SIGHT INTEL</h1>
+                <p>SIH26009 • AI Exploration & Production Intelligence • MOIL Ltd</p>
+            </div>
+        </div>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-tab="mines" onclick="switchMainTab('mines', this)">Mines</button>
+            <button class="nav-tab" data-tab="prospectivity" onclick="switchMainTab('prospectivity', this)">Prospectivity</button>
+            <button class="nav-tab" data-tab="geology" onclick="switchMainTab('geology', this)">Weather</button>
+            <button class="nav-tab" data-tab="operations" onclick="switchMainTab('operations', this)">Operations</button>
+            <button class="nav-tab" data-tab="mlmodels" onclick="switchMainTab('mlmodels', this)">ML Models</button>
+            <button class="nav-tab" data-tab="simulator" onclick="switchMainTab('simulator', this)">Simulator</button>
+            <button class="nav-tab" data-tab="reports" onclick="switchMainTab('reports', this)">Reports</button>
+            <button class="nav-tab" data-tab="provenance" onclick="switchMainTab('provenance', this)">Data Provenance</button>
+        </div>
+
+        <div class="header-right">
+            <span class="status-pill status-live"><span class="dot"></span> Live Pipeline</span>
+            <select class="region-select" id="regionFilter" onchange="filterByRegion(this.value)">
+                <option value="all">Global (World)</option>
+                <option value="india">All India</option>
+                <option value="mp">Madhya Pradesh</option>
+                <option value="mh">Maharashtra</option>
+                <option value="od">Odisha</option>
+                <option value="ka">Karnataka</option>
+                <option value="goa">Goa</option>
+                <option value="rj">Rajasthan</option>
+                <option value="gj">Gujarat</option>
+                <option value="jh">Jharkhand</option>
+                <option value="ap">Andhra Pradesh</option>
+            </select>
+            <button class="btn-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); padding: 6px 12px; margin-left: 10px;" onclick="performLogout()">Logout</button>
+        </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         MAIN 3-COLUMN LAYOUT
+    ============================================================ -->
+    <div class="app-main">
+
+        <!-- ========== LEFT ICON SIDEBAR ========== -->
+        <!-- Removed per user request -->
+
+        <!-- ========== LEFT PANEL ========== -->
+        <div class="panel-left">
+
+            <!-- ===== MINES TAB ===== -->
+            <div class="tab-page active" id="page-mines">
+                <div class="section">
+                    <div class="section-title">
+                        <span>Mine Explorer — Global</span>
+                        <span class="badge-sm badge-blue">Global Sites</span>
+                    </div>
+                    <input type="text" class="search-box" id="mineSearch" placeholder="Search mines (e.g., Balaghat, Dongri, Barbil...)" oninput="filterMines(this.value)">
+                </div>
+                <div class="section" style="flex:1; overflow-y:auto; padding-top: 6px;">
+                    <div id="mineList"></div>
+                </div>
+            </div>
+
+            <!-- ===== PROSPECTIVITY TAB ===== -->
+            <div class="tab-page" id="page-prospectivity">
+                <div class="sub-tabs">
+                    <button class="sub-tab active" onclick="switchSubTab('prosp-overview', this)">Zone Overview</button>
+                    <button class="sub-tab" onclick="switchSubTab('prosp-chat', this)">Ask the Map</button>
+                </div>
+
+                <!-- Zone Overview -->
+                <div class="tab-page active" id="prosp-overview">
+                    <div class="section">
+                        <div class="section-title">
+                            <span>Selected Zone</span>
+                            <span class="badge-sm badge-green" id="zone-badge">HIGH</span>
+                        </div>
+                        <div class="kpi-grid">
+                            <div class="kpi-card"><label>Zone ID</label><div class="val val-blue" id="zone-id">ZONE_1479</div></div>
+                            <div class="kpi-card"><label>AI Probability</label><div class="val val-green" id="zone-prob">0.9879</div></div>
+                            <div class="kpi-card"><label>Coordinates</label><div class="val" id="zone-coords" style="font-size: 0.78rem;">21.863°N, 80.197°E</div></div>
+                            <div class="kpi-card"><label>Confidence</label><div class="val val-blue" id="zone-conf" style="font-size: 0.78rem;">HIGH (Ensemble)</div></div>
+                        </div>
+                    </div>
+
+                    <!-- Prospectivity Gauge -->
+                    <div class="section">
+                        <div class="section-title"><span>Prospectivity Score</span></div>
+                        <div class="gauge-container">
+                            <div class="gauge-ring">
+                                <svg viewBox="0 0 140 140">
+                                    <circle cx="70" cy="70" r="60" fill="none" stroke="rgba(56,189,248,0.1)" stroke-width="10"/>
+                                    <circle cx="70" cy="70" r="60" fill="none" stroke="url(#gaugeGrad)" stroke-width="10"
+                                            stroke-dasharray="377" id="gauge-arc"
+                                            stroke-dashoffset="45" stroke-linecap="round"/>
+                                    <defs>
+                                        <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" style="stop-color:#38bdf8"/>
+                                            <stop offset="100%" style="stop-color:#34d399"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div style="text-align:center; z-index:2;">
+                                    <div class="score-val" id="gauge-score">99</div>
+                                    <div class="score-sub">/100</div>
+                                </div>
+                            </div>
+                            <div class="gauge-label gauge-high" id="gauge-priority">High Exploration Priority</div>
+                        </div>
+                    </div>
+
+                    <!-- SHAP Drivers -->
+                    <div class="section">
+                        <div class="section-title">
+                            <span>XAI Feature Attributions</span>
+                            <span class="badge-sm badge-blue">SHAP</span>
+                        </div>
+                        <p id="zone-explanation" style="font-size: 0.76rem; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">
+                            High ferrous mineral concentration detected in SWIR reflectance.
+                        </p>
+                        <ul class="driver-list" id="zone-drivers"></ul>
+                    </div>
+
+                    <!-- ROI -->
+                    <div class="section">
+                        <div class="section-title">
+                            <span>Exploration ROI Estimate</span>
+                            <span class="badge-sm badge-orange">UNFC G3/G4</span>
+                        </div>
+                        <div class="kpi-grid">
+                            <div class="kpi-card"><label>Drilling Cost (150m)</label><div class="val val-orange" id="roi-cost">₹6.75L</div></div>
+                            <div class="kpi-card"><label>Risk-Adjusted Value</label><div class="val val-green" id="roi-value">₹38.19L</div></div>
+                        </div>
+                        <div class="rec-box" id="roi-rec">
+                            <strong>✅ RECOMMENDED FOR PHASE-1 DRILLING</strong>
+                            Net Gain: ₹31.44 Lakhs (ROI: 4.66x)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat -->
+                <div class="tab-page" id="prosp-chat">
+                    <div class="chat-container">
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="chat-bubble bot fade-in">
+                                👋 <b>Hello!</b> I am <b>GeoOreSight AI</b> — your manganese exploration assistant for all of India.<br><br>
+                                Ask me about prospectivity targets, mine shortfalls, SHAP drivers, ROI, or geological context.
+                            </div>
+                        </div>
+                        <div class="quick-chips">
+                            <button class="chip-btn" onclick="sendQuickPrompt('Explain the ROI calculation')">📊 ROI Model</button>
+                            <button class="chip-btn" onclick="sendQuickPrompt('Which mine has highest shortfall risk?')">⚠️ Shortfall Risk</button>
+                            <button class="chip-btn" onclick="sendQuickPrompt('Where should we drill next?')">🎯 Top Target</button>
+                            <button class="chip-btn" onclick="sendQuickPrompt('What is the price of ROM ore vs EMD?')">💰 Pricing</button>
+                            <button class="chip-btn" onclick="sendQuickPrompt('Explain Sausar Group geology')">🪨 Geology</button>
+                        </div>
+                        <div class="chat-input-box">
+                            <input type="text" id="chatInput" placeholder="Ask about any mine, zone, or analysis..." onkeydown="if(event.key==='Enter') sendChatMessage()">
+                            <button onclick="sendChatMessage()">Send</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ===== GEOLOGY TAB ===== -->
+            <div class="tab-page" id="page-geology">
+                <div class="section">
+                    <div class="section-title">
+                        <span>🪨 Geological Layer Controls</span>
+                        <span class="badge-sm badge-blue">India</span>
+                    </div>
+                    <p style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 10px;">Toggle geological overlays on the map. Data from GSI Geological Survey of India.</p>
+                </div>
+                <div class="section">
+                    <div class="section-title"><span>Lithology Layers</span></div>
+                    <div class="geo-nav">
+                        <label class="layer-toggle"><input type="checkbox" checked onchange="toggleLayer('faults')"> Fault Lines & Lineaments</label>
+                        <label class="layer-toggle"><input type="checkbox" checked onchange="toggleLayer('anomalies')"> Satellite Anomaly Zones</label>
+                        <label class="layer-toggle"><input type="checkbox" onchange="toggleLayer('rocktype')"> Rock Type Classification</label>
+                        <label class="layer-toggle"><input type="checkbox" onchange="toggleLayer('ndvi')"> NDVI Vegetation Index</label>
+                        <label class="layer-toggle"><input type="checkbox" checked onchange="toggleLayer('spectral')"> Ferrous Mineral SWIR</label>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title"><span>Formation Legend</span></div>
+                    <div class="geo-nav">
+                        <div class="geo-nav-item active"><span style="width:10px;height:10px;border-radius:2px;background:#e879f9;display:inline-block;"></span> Sausar Group (Gondite)</div>
+                        <div class="geo-nav-item"><span style="width:10px;height:10px;border-radius:2px;background:#f472b6;display:inline-block;"></span> Iron Ore Group (Singhbhum)</div>
+                        <div class="geo-nav-item"><span style="width:10px;height:10px;border-radius:2px;background:#a78bfa;display:inline-block;"></span> Dharwar Supergroup</div>
+                        <div class="geo-nav-item"><span style="width:10px;height:10px;border-radius:2px;background:#34d399;display:inline-block;"></span> Gangpur Group</div>
+                        <div class="geo-nav-item"><span style="width:10px;height:10px;border-radius:2px;background:#fbbf24;display:inline-block;"></span> Penganga Group</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title"><span>Manganese Belts of India</span></div>
+                    <div class="rec-box">
+                        <strong>5 Major Manganese Belts</strong>
+                        1. <b>Central India Belt</b> — Balaghat-Chhindwara-Nagpur (MOIL) — 70% of India's Mn reserves<br>
+                        2. <b>Singhbhum Belt</b> — Odisha-Jharkhand — Iron Ore Group host<br>
+                        3. <b>Dharwar Belt</b> — Karnataka-Goa — Shimoga-Chitradurga formations<br>
+                        4. <b>Aravallis Belt</b> — Rajasthan-Gujarat — Banswara-Jhabua corridor<br>
+                        5. <b>Eastern Ghats Belt</b> — AP-Telangana — Khondalite-Kodurite association
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== OPERATIONS TAB ===== -->
+            <div class="tab-page" id="page-operations">
+                <div class="section">
+                    <div class="section-title">
+                        <span>⛏️ Mine Production & Shortfall</span>
+                        <span class="badge-sm badge-orange">ERA5 Climate Model</span>
+                    </div>
+                    <p style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 6px;">
+                        Monthly shortfall predictions from ECMWF ERA5-Land public climate data, with SHAP-driven corrective actions.
+                    </p>
+                    <div class="chart-box"><canvas id="shortfallChart"></canvas></div>
+                </div>
+                <div class="section" style="flex:1; overflow-y:auto;">
+                    <div class="section-title"><span>Corrective Action Plans</span></div>
+                    <div id="shortfall-mine-list"></div>
+                </div>
+            </div>
+
+            <!-- ===== SIMULATOR TAB ===== -->
+            <div class="tab-page" id="page-simulator">
+                <div class="section">
+                    <div class="section-title">
+                        <span>🎛️ What-If Scenario Simulator</span>
+                        <span class="badge-sm badge-blue">Interactive</span>
+                    </div>
+                    <p style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 12px;">
+                        Adjust operational conditions and see scenario impact on production forecast.
+                    </p>
+                    <div style="font-size: 0.70rem; background: rgba(245,158,11,0.10); border: 1px solid rgba(245,158,11,0.3); border-radius: 6px; padding: 6px 10px; margin-bottom: 10px; color: #f59e0b;">
+                        ⚠️ <strong>What-If Scenario Planning</strong> — Scenario planning only; not historical ground-truth validation. Operational telemetry (downtime, blasting) is prototype schema data.
+                    </div>
+                    <div class="simulator-container">
+                        <div class="slider-group">
+                            <div class="slider-label">
+                                <span>Equipment Availability</span>
+                                <span class="slider-value" id="sim-equip-val">95%</span>
+                            </div>
+                            <input type="range" min="30" max="100" value="95" id="sim-equip" oninput="updateSimulator()">
+                        </div>
+                        <div class="slider-group">
+                            <div class="slider-label">
+                                <span>Rainfall Intensity</span>
+                                <span class="slider-value" id="sim-rain-val">35%</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="35" id="sim-rain" oninput="updateSimulator()">
+                        </div>
+                        <div class="slider-group">
+                            <div class="slider-label">
+                                <span>Transport / Logistics Delay</span>
+                                <span class="slider-value" id="sim-transport-val">10%</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="10" id="sim-transport" oninput="updateSimulator()">
+                        </div>
+                        <div class="slider-group">
+                            <div class="slider-label">
+                                <span>Workforce Attendance</span>
+                                <span class="slider-value" id="sim-workforce-val">88%</span>
+                            </div>
+                            <input type="range" min="40" max="100" value="88" id="sim-workforce" oninput="updateSimulator()">
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="sim-result" id="sim-result">
+                        <div class="sim-result-title">⚡ Predicted Impact</div>
+                        <div class="sim-result-row"><span>Projected Monthly Output</span><span style="font-weight:700;color:var(--accent);" id="sim-output">23,750 T</span></div>
+                        <div class="sim-result-row"><span>Shortfall Risk</span><span style="font-weight:700;" id="sim-shortfall">12.4%</span></div>
+                        <div class="sim-result-row"><span>Revenue Impact</span><span style="font-weight:700;color:var(--accent-orange);" id="sim-revenue">₹-2.34 Cr</span></div>
+                        <div class="sim-result-row"><span>Confidence</span><span style="font-weight:700;color:var(--accent-green);" id="sim-confidence">HIGH (92%)</span></div>
+                    </div>
+                    <div class="rec-box" id="sim-recommendation" style="margin-top:10px;">
+                        <strong>🤖 AI Recommendation</strong>
+                        Current parameters suggest nominal operations. No immediate corrective action needed.
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== ML MODELS TAB ===== -->
+            <div class="tab-page" id="page-mlmodels">
+                <div class="section">
+                    <div class="section-title">
+                        <span>🧠 ML Model Pipeline Status</span>
+                        <span class="badge-sm badge-green">All Healthy</span>
+                    </div>
+                    <p style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 10px;">
+                        Pipeline status of all AI/ML models powering the exploration intelligence engine.
+                    </p>
+                </div>
+                <div class="section" style="flex:1; overflow-y:auto;">
+                    <div class="ml-card fade-in">
+                        <div class="ml-card-header">
+                            <span class="ml-card-name">XGBoost Prospectivity Classifier</span>
+                            <span class="badge-sm badge-green">Active</span>
+                        </div>
+                        <div style="font-size:0.72rem;color:var(--text-muted);">ROC-AUC: 0.9251 • Precision: 0.884 • 5-Fold Spatial CV</div>
+                        <div class="ml-bar-container"><div class="ml-bar-fill" style="width:92.5%"></div></div>
+                    </div>
+                    <div class="ml-card fade-in" style="animation-delay: 0.1s;">
+                        <div class="ml-card-header">
+                            <span class="ml-card-name">Random Forest Baseline</span>
+                            <span class="badge-sm badge-green">Active</span>
+                        </div>
+                        <div style="font-size:0.72rem;color:var(--text-muted);">ROC-AUC: 0.8847 • Ensemble Consensus Check</div>
+                        <div class="ml-bar-container"><div class="ml-bar-fill" style="width:88.5%"></div></div>
+                    </div>
+                    <div class="ml-card fade-in" style="animation-delay: 0.2s;">
+                        <div class="ml-card-header">
+                            <span class="ml-card-name">XGBoost Shortfall Regressor</span>
+                            <span class="badge-sm badge-green">Active</span>
+                        </div>
+                        <div style="font-size:0.72rem;color:var(--text-muted);">MAE: 3.2% • RMSE: 5.1% • 10-Mine Coverage</div>
+                        <div class="ml-bar-container"><div class="ml-bar-fill" style="width:86%"></div></div>
+                    </div>
+                    <div class="ml-card fade-in" style="animation-delay: 0.3s;">
+                        <div class="ml-card-header">
+                            <span class="ml-card-name">SHAP Explainability Engine</span>
+                            <span class="badge-sm badge-blue">v4.2</span>
+                        </div>
+                        <div style="font-size:0.72rem;color:var(--text-muted);">TreeExplainer • Top-K Feature Attributions • Waterfall</div>
+                        <div class="ml-bar-container"><div class="ml-bar-fill" style="width:100%"></div></div>
+                    </div>
+                    <div class="ml-card fade-in" style="animation-delay: 0.4s;">
+                        <div class="ml-card-header">
+                            <span class="ml-card-name">GEE Data Pipeline</span>
+                            <span class="badge-sm badge-green">Active</span>
+                        </div>
+                        <div style="font-size:0.72rem;color:var(--text-muted);">Sentinel-2 SR • SRTM DEM • Multi-Temporal Composite</div>
+                        <div class="ml-bar-container"><div class="ml-bar-fill" style="width:95%"></div></div>
+                    </div>
+                    <div class="ml-card fade-in" style="animation-delay: 0.5s;">
+                        <div class="ml-card-header">
+                            <span class="ml-card-name">Historical Backtest Validator</span>
+                            <span class="badge-sm badge-green">Validated</span>
+                        </div>
+                        <div style="font-size:0.72rem;color:var(--text-muted);">5/5 Known Deposits Validated • LOO-CV Validated</div>
+                        <div class="ml-bar-container"><div class="ml-bar-fill" style="width:100%"></div></div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title"><span>Model Benchmarks</span></div>
+                    <div class="kpi-grid">
+                        <div class="kpi-card"><label>Total Data Points</label><div class="val val-blue">1,600</div></div>
+                        <div class="kpi-card"><label>Spectral Features</label><div class="val val-blue">10</div></div>
+                        <div class="kpi-card"><label>Spatial CV AUC</label><div class="val val-green">0.9251</div></div>
+                        <div class="kpi-card"><label>Data Completeness</label><div class="val val-green">98.7%</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== REPORTS TAB ===== -->
+            <div class="tab-page" id="page-reports">
+                <div class="section">
+                    <div class="section-title">
+                        <span>📋 Summary Reports</span>
+                        <span class="badge-sm badge-blue">Auto-Generated</span>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="rec-box">
+                        <strong>🏆 National Manganese Exploration Summary</strong>
+                        • Total Prospective Zones Flagged: <b>50</b> across 5 major belts<br>
+                        • High-Priority Targets (>0.85 probability): <b>14 zones</b><br>
+                        • States Covered: MP, MH, OD, KA, GOA, RJ, GJ, JH, AP<br>
+                        • AI Model Accuracy (Spatial CV): <b>ROC-AUC 0.9251</b><br>
+                        • Historical Backtest: <b>5/5 validated</b> on known MOIL deposits
+                    </div>
+                    <div class="rec-box" style="margin-top:8px; border-left-color: var(--accent-orange);">
+                        <strong>📊 Production Intelligence</strong>
+                        • Active MOIL Mines Monitored: <b>10</b><br>
+                        • Highest Risk Mine: <b>Sitapatore/Sukli</b> (23.8% shortfall)<br>
+                        • Total Monthly Production Target: <b>1,50,000 Tonnes</b><br>
+                        • FY25 Annual Production: <b>18.02 Lakh Tonnes</b> (+2.7% YoY)
+                    </div>
+                    <div class="rec-box" style="margin-top:8px; border-left-color: var(--accent-green);">
+                        <strong>💰 Market Intelligence</strong>
+                        • ROM Ore (38-42% Mn): <b>₹10,500 – ₹12,500/T</b><br>
+                        • EMD (Battery Grade): <b>₹1,80,000/T</b><br>
+                        • Ferro-Manganese Alloy: <b>₹72,000 – ₹78,000/T</b><br>
+                        • Phase-1 Drilling Cost: <b>₹4,500/meter</b>
+                    </div>
+                    <button class="btn-outline" style="margin-top: 12px;" onclick="alert('Report generation feature coming in v2.0')">
+                        📥 Export Full PDF Report
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== CENTER MAP ========== -->
+        <div class="panel-center">
+            <div id="map"></div>
+            <div class="map-overlay-info">
+                <div class="overlay-title" id="map-region-label">Global — Manganese Exploration Map</div>
+                <div class="overlay-sub" id="map-mine-count">Showing 37 mine sites globally</div>
+            </div>
+            <div class="map-legend">
+                <h4>Prospectivity Legend</h4>
+                <div class="legend-item"><span class="legend-dot" style="background:#ef4444;"></span> > 0.85 (High Target)</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> 0.65 – 0.85 (Moderate)</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#22c55e;"></span> < 0.65 (Low)</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#38bdf8; border-radius:50%;"></span> Known MOIL Mine</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#a78bfa; border-radius:50%;"></span> Other India Mines</div>
+            </div>
+        </div>
+
+        <!-- ========== RIGHT PANEL ========== -->
+        <div class="panel-right">
+            <!-- Location Intelligence Header -->
+            <div class="section">
+                <div class="section-title">
+                    <span id="right-panel-title">Region Report</span>
+                    <span class="badge-sm badge-blue" id="selectedMineRegion">Central India</span>
+                </div>
+                <div id="mineDetailPanel">
+                    <h3 style="font-size: 1rem; font-weight: 800; margin-bottom: 4px;" id="detail-mine-name">Balaghat Mine (Bharveli)</h3>
+                    <p style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 10px;" id="detail-mine-meta">
+                        Sausar Group / MOIL • Underground • Madhya Pradesh
+                    </p>
+                    <div class="kpi-grid">
+                        <div class="kpi-card"><label>Model Confidence</label><div class="val val-green" id="detail-confidence">HIGH</div></div>
+                        <div class="kpi-card"><label>Monthly Target</label><div class="val val-blue" id="detail-target">25,000 T</div></div>
+                        <div class="kpi-card"><label>Ore Grade</label><div class="val val-orange" id="detail-grade">38.7% Mn</div></div>
+                        <div class="kpi-card"><label>Elevation</label><div class="val" id="detail-elevation">335 m</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Importance Radar Chart -->
+            <div class="section">
+                <div class="section-title">
+                    <span>Feature Importance Radar</span>
+                    <span class="badge-sm badge-blue">Feature Importance</span>
+                </div>
+                <p style="font-size:0.68rem;color:var(--text-muted);margin-bottom:4px;">Indicative feature scores for this mine type. For zone-specific SHAP values, see the Prospectivity tab.</p>
+                <div class="radar-container">
+                    <canvas id="radarChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Operational Metrics (Demo Schema) -->
+            <div class="section">
+                <div class="section-title"><span>Operational Metrics</span><span class="badge-sm" style="background:rgba(245,158,11,0.15);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);">Prototype Demo Data</span></div>
+                <p style="font-size:0.68rem;color:var(--text-muted);margin-bottom:6px;">Illustrative values — awaiting authenticated MOIL SCADA/ERP telemetry feed.</p>
+                <div class="kpi-grid">
+                    <div class="kpi-card"><label>Equip. Uptime (Demo)</label><div class="val val-green" id="detail-uptime">92%</div></div>
+                    <div class="kpi-card"><label>Rainfall (mm ERA5)</label><div class="val" id="detail-rainfall">12.4</div></div>
+                    <div class="kpi-card"><label>Shortfall Risk</label><div class="val val-orange" id="detail-risk">15.2%</div></div>
+                    <div class="kpi-card"><label>Workforce (Demo)</label><div class="val val-blue" id="detail-workforce">320</div></div>
+                </div>
+            </div>
+
+            <!-- Shortfall Chart for selected mine -->
+            <div class="section">
+                <div class="section-title"><span>Production vs Target Trend</span></div>
+                <div class="chart-box"><canvas id="trendChart"></canvas></div>
+            </div>
+
+            <!-- Corrective Action -->
+            <div class="section">
+                <div class="section-title"><span>Project Archives / Actions</span></div>
+                <div class="rec-box" id="detail-corrective">
+                    <strong>Overhaul Shaft Hoist Winch & LHD Fleet</strong>
+                    High machinery downtime detected. Deploy mechanical repair crews to underground shaft hoist systems.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ============================================================
+         APPLICATION JAVASCRIPT
+    ============================================================ -->
+    <script>
+        // ============================================================
+        // RBAC LOGIN LOGIC
+        // ============================================================
+        function performLogin() {
+            const user = document.getElementById('login-username').value;
+            const pass = document.getElementById('login-password').value;
+            const err = document.getElementById('login-error');
+            const tabs = document.querySelectorAll('.nav-tab');
+            
+            if (user === 'admin' && pass === 'admin') {
+                tabs.forEach(t => t.style.display = 'inline-block');
+                document.getElementById('rbac-overlay').style.display = 'none';
+            } else if (user === 'geologist' && pass === 'geo123') {
+                tabs.forEach(t => {
+                    const tabName = t.getAttribute('data-tab');
+                    if (['prospectivity', 'geology', 'mlmodels'].includes(tabName)) {
+                        t.style.display = 'inline-block';
+                    } else {
+                        t.style.display = 'none';
+                    }
+                });
+                switchMainTab('prospectivity', document.querySelector('.nav-tab[data-tab="prospectivity"]'));
+                document.getElementById('rbac-overlay').style.display = 'none';
+            } else if (user === 'manager' && pass === 'moil123') {
+                tabs.forEach(t => {
+                    const tabName = t.getAttribute('data-tab');
+                    if (['mines', 'operations', 'simulator', 'reports'].includes(tabName)) {
+                        t.style.display = 'inline-block';
+                    } else {
+                        t.style.display = 'none';
+                    }
+                });
+                switchMainTab('mines', document.querySelector('.nav-tab[data-tab="mines"]'));
+                document.getElementById('rbac-overlay').style.display = 'none';
+            } else {
+                err.style.display = 'block';
+            }
+        }
+
+        function performLogout() {
+            // Show the overlay again
+            document.getElementById('rbac-overlay').style.display = 'flex';
+            // Clear inputs
+            document.getElementById('login-username').value = '';
+            document.getElementById('login-password').value = '';
+            document.getElementById('login-error').style.display = 'none';
+        }
+        // ============================================================
+        // ALL-INDIA MINE DATABASE — 30+ locations across 9 states
+        // ============================================================
+        const ALL_INDIA_MINES = [
+            // MOIL Mines — Madhya Pradesh
+            { id: "MINE_01", name: "Balaghat (Bharveli)", state: "MP", region: "mp", belt: "Central India", type: "Underground", lat: 21.8464, lon: 80.2281, target: 25000, grade: 38.7, elevation: 335, operator: "MOIL Ltd", formation: "Sausar Group" },
+            { id: "MINE_03", name: "Tirodi", state: "MP", region: "mp", belt: "Central India", type: "Opencast", lat: 21.7000, lon: 79.6667, target: 18000, grade: 35.2, elevation: 410, operator: "MOIL Ltd", formation: "Sausar Group" },
+            { id: "MINE_06", name: "Ukwa", state: "MP", region: "mp", belt: "Central India", type: "Underground", lat: 21.9714, lon: 80.4458, target: 14000, grade: 36.5, elevation: 290, operator: "MOIL Ltd", formation: "Sausar Group" },
+            { id: "MINE_07", name: "Munsar", state: "MP", region: "mp", belt: "Central India", type: "Underground", lat: 21.8200, lon: 80.1500, target: 13000, grade: 34.8, elevation: 310, operator: "MOIL Ltd", formation: "Sausar Group" },
+            
+            // MOIL Mines — Maharashtra
+            { id: "MINE_02", name: "Dongri Buzurg", state: "MH", region: "mh", belt: "Central India", type: "Opencast", lat: 21.5478, lon: 79.7431, target: 22000, grade: 40.1, elevation: 380, operator: "MOIL Ltd", formation: "Sausar Group" },
+            { id: "MINE_04", name: "Chikla", state: "MH", region: "mh", belt: "Central India", type: "Underground", lat: 21.4500, lon: 79.5800, target: 16000, grade: 37.4, elevation: 345, operator: "MOIL Ltd", formation: "Sausar Group" },
+            { id: "MINE_05", name: "Kandri", state: "MH", region: "mh", belt: "Central India", type: "Underground", lat: 21.4106, lon: 79.2656, target: 15000, grade: 39.2, elevation: 300, operator: "MOIL Ltd", formation: "Sausar Group" },
+            { id: "MINE_08", name: "Gumgaon", state: "MH", region: "mh", belt: "Central India", type: "Underground", lat: 21.4800, lon: 79.3200, target: 11000, grade: 33.4, elevation: 285, operator: "MOIL Ltd", formation: "Sausar Group" },
+            { id: "MINE_09", name: "Beldongri", state: "MH", region: "mh", belt: "Central India", type: "Underground", lat: 21.5200, lon: 79.6100, target: 9000, grade: 35.8, elevation: 360, operator: "MOIL Ltd", formation: "Sausar Group" },
+            { id: "MINE_10", name: "Sitapatore / Sukli", state: "MH", region: "mh", belt: "Central India", type: "Opencast", lat: 21.6000, lon: 79.7800, target: 7000, grade: 32.1, elevation: 395, operator: "MOIL Ltd", formation: "Sausar Group" },
+            
+            // Odisha Mines
+            { id: "MINE_OD_01", name: "Barbil (Joda-Koira)", state: "OD", region: "od", belt: "Singhbhum", type: "Opencast", lat: 22.0976, lon: 85.3829, target: 30000, grade: 42.5, elevation: 520, operator: "OMC Ltd", formation: "Iron Ore Group" },
+            { id: "MINE_OD_02", name: "Kalahandi Mines", state: "OD", region: "od", belt: "Singhbhum", type: "Opencast", lat: 19.9100, lon: 83.1700, target: 15000, grade: 35.0, elevation: 290, operator: "OMC Ltd", formation: "Iron Ore Group" },
+            { id: "MINE_OD_03", name: "Keonjhar (Jajpur)", state: "OD", region: "od", belt: "Singhbhum", type: "Opencast", lat: 21.6300, lon: 85.5800, target: 20000, grade: 38.8, elevation: 440, operator: "TISCO", formation: "Iron Ore Group" },
+            { id: "MINE_OD_04", name: "Nishikhal Mines", state: "OD", region: "od", belt: "Eastern Ghats", type: "Opencast", lat: 19.3500, lon: 84.5200, target: 8000, grade: 30.5, elevation: 200, operator: "IMFA", formation: "Khondalite" },
+            { id: "MINE_OD_05", name: "Sukinda Valley", state: "OD", region: "od", belt: "Singhbhum", type: "Opencast", lat: 21.0600, lon: 85.9400, target: 12000, grade: 36.2, elevation: 180, operator: "IDC-OL", formation: "Sukinda Ultramafic" },
+            
+            // Karnataka Mines
+            { id: "MINE_KA_01", name: "Sandur (Bellary)", state: "KA", region: "ka", belt: "Dharwar", type: "Opencast", lat: 15.0851, lon: 76.5528, target: 25000, grade: 41.3, elevation: 580, operator: "SMIORE", formation: "Dharwar Supergroup" },
+            { id: "MINE_KA_02", name: "Shimoga Mines", state: "KA", region: "ka", belt: "Dharwar", type: "Opencast", lat: 13.9300, lon: 75.5700, target: 10000, grade: 34.7, elevation: 640, operator: "KMMPL", formation: "Shimoga Group" },
+            { id: "MINE_KA_03", name: "Chitradurga", state: "KA", region: "ka", belt: "Dharwar", type: "Opencast", lat: 14.2300, lon: 76.3900, target: 8000, grade: 33.2, elevation: 720, operator: "KMMPL", formation: "Chitradurga Group" },
+            { id: "MINE_KA_04", name: "Tumkur Deposits", state: "KA", region: "ka", belt: "Dharwar", type: "Underground", lat: 13.3400, lon: 77.1000, target: 5000, grade: 30.8, elevation: 810, operator: "Private", formation: "Sargur Group" },
+            
+            // Goa Mines
+            { id: "MINE_GOA_01", name: "Bicholim Mines", state: "GOA", region: "goa", belt: "Dharwar", type: "Opencast", lat: 15.5900, lon: 73.9600, target: 12000, grade: 36.4, elevation: 70, operator: "Sesa Goa", formation: "Goa Group" },
+            { id: "MINE_GOA_02", name: "Sanguem Deposits", state: "GOA", region: "goa", belt: "Dharwar", type: "Opencast", lat: 15.2300, lon: 74.1500, target: 8000, grade: 32.9, elevation: 110, operator: "Fomento", formation: "Goa Group" },
+            
+            // Rajasthan Mines
+            { id: "MINE_RJ_01", name: "Banswara Mines", state: "RJ", region: "rj", belt: "Aravallis", type: "Opencast", lat: 23.5500, lon: 74.4400, target: 10000, grade: 28.5, elevation: 350, operator: "RSMM", formation: "Aravalli Supergroup" },
+            { id: "MINE_RJ_02", name: "Jhabua (Alirajpur)", state: "RJ", region: "rj", belt: "Aravallis", type: "Opencast", lat: 22.7700, lon: 74.5900, target: 6000, grade: 26.3, elevation: 280, operator: "RSMM", formation: "Aravalli Supergroup" },
+            
+            // Gujarat Mines
+            { id: "MINE_GJ_01", name: "Panchmahal Mines", state: "GJ", region: "gj", belt: "Aravallis", type: "Opencast", lat: 22.7800, lon: 73.6100, target: 5000, grade: 25.7, elevation: 230, operator: "GMDC", formation: "Champaner Group" },
+            
+            // Jharkhand Mines
+            { id: "MINE_JH_01", name: "Chaibasa (W. Singhbhum)", state: "JH", region: "jh", belt: "Singhbhum", type: "Opencast", lat: 22.5500, lon: 85.8100, target: 18000, grade: 40.2, elevation: 230, operator: "TISCO", formation: "Iron Ore Group" },
+            { id: "MINE_JH_02", name: "Jamshedpur Area", state: "JH", region: "jh", belt: "Singhbhum", type: "Underground", lat: 22.8000, lon: 86.2000, target: 12000, grade: 37.5, elevation: 195, operator: "SAIL", formation: "Iron Ore Group" },
+            
+            // Andhra Pradesh Mines
+            { id: "MINE_AP_01", name: "Vizianagaram Mines", state: "AP", region: "ap", belt: "Eastern Ghats", type: "Opencast", lat: 18.1100, lon: 83.4200, target: 12000, grade: 31.8, elevation: 200, operator: "APMDC", formation: "Khondalite Group" },
+            { id: "MINE_AP_02", name: "Srikakulam Deposits", state: "AP", region: "ap", belt: "Eastern Ghats", type: "Opencast", lat: 18.2900, lon: 83.8900, target: 6000, grade: 29.4, elevation: 150, operator: "APMDC", formation: "Kodurite Series" },
+            { id: "MINE_AP_03", name: "Kadapa Basin", state: "AP", region: "india", belt: "Eastern Ghats", type: "Opencast", lat: 14.4700, lon: 78.8200, target: 4000, grade: 27.6, elevation: 420, operator: "Private", formation: "Cuddapah Supergroup" },
+            
+            // International Mines
+            { id: "MINE_INT_01", name: "Kalahari Manganese Field", state: "South Africa", region: "africa", belt: "Kalahari", type: "Underground", lat: -27.1833, lon: 22.9500, target: 150000, grade: 44.0, elevation: 1100, operator: "South32", formation: "Hotazel Formation" },
+            { id: "MINE_INT_02", name: "Groote Eylandt", state: "Australia", region: "australia", belt: "Groote", type: "Opencast", lat: -13.9667, lon: 136.6000, target: 120000, grade: 48.0, elevation: 30, operator: "GEMCO", formation: "Cretaceous" },
+            { id: "MINE_INT_03", name: "Moanda Mine", state: "Gabon", region: "africa", belt: "Franceville", type: "Opencast", lat: -1.5667, lon: 13.2000, target: 180000, grade: 50.0, elevation: 600, operator: "COMILOG", formation: "Francevillian" },
+            { id: "MINE_INT_04", name: "Azul Mine", state: "Brazil", region: "sa", belt: "Carajas", type: "Opencast", lat: -6.0833, lon: -50.4500, target: 80000, grade: 42.0, elevation: 350, operator: "Vale", formation: "Azul Formation" },
+            { id: "MINE_INT_05", name: "Woodie Woodie", state: "Australia", region: "australia", belt: "Pilbara", type: "Opencast", lat: -21.6500, lon: 121.2000, target: 60000, grade: 45.0, elevation: 250, operator: "Consolidated Minerals", formation: "Carawine Dolomite" },
+            { id: "MINE_INT_06", name: "Chiatura", state: "Georgia", region: "europe", belt: "Caucasus", type: "Underground", lat: 42.2833, lon: 43.2833, target: 40000, grade: 35.0, elevation: 700, operator: "Georgian Manganese", formation: "Oligocene" },
+            { id: "MINE_INT_07", name: "Ntshengalala", state: "Ghana", region: "africa", belt: "Nsuta", type: "Opencast", lat: 5.2833, lon: -1.9833, target: 30000, grade: 38.0, elevation: 150, operator: "Ghana Manganese Co", formation: "Birimian" },
+            { id: "MINE_INT_08", name: "Guangxi Manganese", state: "China", region: "asia", belt: "South China", type: "Opencast", lat: 23.8333, lon: 106.6667, target: 50000, grade: 22.0, elevation: 400, operator: "CITIC Dameng", formation: "Triassic" }
+        ];
+
+        // MOIL Backtest Coordinates
+        const MINE_COORDS = {
+            "Balaghat": { lat: 21.8464, lon: 80.2281, name: "Balaghat Mine (Bharveli)" },
+            "Ukwa": { lat: 21.9714, lon: 80.4458, name: "Ukwa Underground Mine" },
+            "Tirodi": { lat: 21.7000, lon: 79.6667, name: "Tirodi Opencast Mine" },
+            "DongriBuzurg": { lat: 21.5478, lon: 79.7431, name: "Dongri Buzurg Mine" },
+            "Kandri": { lat: 21.4106, lon: 79.2656, name: "Kandri Underground Mine" }
+        };
+
+        // ============================================================
+        // GLOBAL STATE
+        // ============================================================
+        let map, shortfallChart, radarChart, trendChart;
+        let zonesData = [];
+        let shortfallData = null;
+        let allMarkers = [];
+        let selectedMine = ALL_INDIA_MINES[0];
+
+        // ============================================================
+        // INITIALIZATION
+        // ============================================================
+        window.addEventListener('DOMContentLoaded', () => {
+            initMap();
+            renderMineList(ALL_INDIA_MINES);
+            loadProspectivityData();
+            loadShortfallData();
+            initRadarChart();
+            initTrendChart();
+            selectMine(ALL_INDIA_MINES[0]);
+        });
+
+        // ============================================================
+        // MAP INITIALIZATION — All India Dark Theme
+        // ============================================================
+        function initMap() {
+            map = L.map('map', {
+                zoomControl: true,
+                attributionControl: false
+            }).setView([20.0, 0.0], 2);
+
+            // Satellite imagery tiles
+            L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                maxZoom: 18
+            }).addTo(map);
+
+            // Reference Labels Overlay
+            L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {
+                maxZoom: 18
+            }).addTo(map);
+
+            // Plot all Indian mines
+            ALL_INDIA_MINES.forEach(m => {
+                const isMOIL = m.operator === "MOIL Ltd";
+                const color = isMOIL ? '#38bdf8' : '#a78bfa';
+                const radius = isMOIL ? 8 : 6;
+
+                const marker = L.circleMarker([m.lat, m.lon], {
+                    radius: radius,
+                    fillColor: color,
+                    color: '#ffffff',
+                    weight: 1.5,
+                    fillOpacity: 0.85
+                }).addTo(map);
+
+                marker.on('click', () => {
+                    selectMine(m);
+                    map.setView([m.lat, m.lon], 10);
+                });
+
+                marker.bindPopup(`
+                    <div style="min-width:180px;">
+                        <b style="color:${color};font-size:0.9rem;">${m.name}</b><br>
+                        <span style="font-size:0.72rem;color:#94a3b8;">${m.operator} • ${m.type} • ${m.state}</span><br>
+                        <span style="font-size:0.72rem;">Grade: ${m.grade}% Mn • Elev: ${m.elevation}m</span>
+                    </div>
+                `);
+
+                allMarkers.push({ marker, mine: m });
+            });
+        }
+
+        // ============================================================
+        // MINE LIST RENDERING
+        // ============================================================
+        function renderMineList(mines) {
+            const container = document.getElementById('mineList');
+            container.innerHTML = '';
+            mines.forEach((m, i) => {
+                const isMOIL = m.operator === "MOIL Ltd";
+                const stateColors = { "MP": "#38bdf8", "MH": "#a78bfa", "OD": "#34d399", "KA": "#f59e0b", "GOA": "#f472b6", "RJ": "#fb923c", "GJ": "#fbbf24", "JH": "#22d3ee", "AP": "#c084fc" };
+                const stateColor = stateColors[m.state] || "#64748b";
+                container.innerHTML += `
+                    <div class="mine-card slide-in" style="animation-delay:${i * 0.04}s;" onclick="selectMineById('${m.id}')">
+                        <div class="mine-card-header">
+                            <span class="mine-card-name">${m.name}</span>
+                            <span class="risk-badge" style="background:${stateColor}20;color:${stateColor};border:1px solid ${stateColor}40;">${m.state}</span>
+                        </div>
+                        <div class="mine-card-meta">${m.operator} • ${m.type} • ${m.belt} Belt</div>
+                        <div class="mine-card-driver">Grade: ${m.grade}% Mn • Target: ${m.target.toLocaleString()} T/mo • ${m.formation}</div>
+                    </div>
+                `;
+            });
+        }
+
+        function filterMines(query) {
+            const q = query.toLowerCase();
+            const filtered = ALL_INDIA_MINES.filter(m =>
+                m.name.toLowerCase().includes(q) ||
+                m.state.toLowerCase().includes(q) ||
+                m.belt.toLowerCase().includes(q) ||
+                m.operator.toLowerCase().includes(q) ||
+                m.formation.toLowerCase().includes(q)
+            );
+            renderMineList(filtered);
+        }
+
+        function filterByRegion(regionCode) {
+            if (regionCode === 'all') {
+                renderMineList(ALL_INDIA_MINES);
+                map.setView([20.0, 0.0], 2);
+                document.getElementById('map-region-label').innerText = 'Global — Manganese Exploration Map';
+                document.getElementById('map-mine-count').innerText = `Showing ${ALL_INDIA_MINES.length} mine sites globally`;
+            } else if (regionCode === 'india') {
+                const filtered = ALL_INDIA_MINES.filter(m => m.region !== 'africa' && m.region !== 'australia' && m.region !== 'sa' && m.region !== 'europe' && m.region !== 'asia');
+                renderMineList(filtered);
+                map.setView([22.5, 80.0], 5);
+                document.getElementById('map-region-label').innerText = 'All India — Manganese Exploration Map';
+                document.getElementById('map-mine-count').innerText = `Showing ${filtered.length} mine sites across 9 states`;
+            } else {
+                const filtered = ALL_INDIA_MINES.filter(m => m.region === regionCode);
+                renderMineList(filtered);
+                if (filtered.length > 0) {
+                    const avgLat = filtered.reduce((s, m) => s + m.lat, 0) / filtered.length;
+                    const avgLon = filtered.reduce((s, m) => s + m.lon, 0) / filtered.length;
+                    map.setView([avgLat, avgLon], 8);
+                }
+                const stateNames = { mp: "Madhya Pradesh", mh: "Maharashtra", od: "Odisha", ka: "Karnataka", goa: "Goa", rj: "Rajasthan", gj: "Gujarat", jh: "Jharkhand", ap: "Andhra Pradesh" };
+                document.getElementById('map-region-label').innerText = `${stateNames[regionCode]} — Manganese Sites`;
+                document.getElementById('map-mine-count').innerText = `Showing ${filtered.length} mine sites`;
+            }
+        }
+
+        function selectMineById(id) {
+            const mine = ALL_INDIA_MINES.find(m => m.id === id);
+            if (mine) {
+                selectMine(mine);
+                map.setView([mine.lat, mine.lon], 10);
+            }
+        }
+
+        function selectMine(mine) {
+            selectedMine = mine;
+            document.getElementById('right-panel-title').innerText = `Region Report: ${mine.state}`;
+            document.getElementById('detail-mine-name').innerText = mine.name;
+            document.getElementById('detail-mine-meta').innerText = `${mine.formation} / ${mine.operator} • ${mine.type} • ${mine.state}`;
+            document.getElementById('detail-confidence').innerText = mine.grade > 35 ? "HIGH" : "MODERATE";
+            document.getElementById('detail-target').innerText = `${mine.target.toLocaleString()} T`;
+            document.getElementById('detail-grade').innerText = `${mine.grade}% Mn`;
+            document.getElementById('detail-elevation').innerText = `${mine.elevation} m`;
+            document.getElementById('selectedMineRegion').innerText = mine.belt;
+
+            // Simulate operational data
+            const uptime = (75 + Math.random() * 20).toFixed(0);
+            const rainfall = (Math.random() * 80).toFixed(1);
+            const risk = (5 + Math.random() * 25).toFixed(1);
+            const workforce = (200 + Math.floor(Math.random() * 300));
+            document.getElementById('detail-uptime').innerText = uptime + '%';
+            document.getElementById('detail-rainfall').innerText = rainfall;
+            document.getElementById('detail-risk').innerText = risk + '%';
+            document.getElementById('detail-workforce').innerText = workforce;
+
+            // Update radar chart
+            updateRadarChart(mine);
+            // Update trend chart
+            updateTrendChart(mine);
+            // Update corrective action
+            updateCorrectiveAction(mine);
+        }
+
+        // ============================================================
+        // PROSPECTIVITY DATA
+        // ============================================================
+        async function loadProspectivityData() {
+            try {
+                const res = await fetch('/api/v1/prospectivity/zones');
+                const data = await res.json();
+                zonesData = data.zones || [];
+                if (zonesData.length > 0) {
+                    renderZonesOnMap(zonesData);
+                    selectZone(zonesData[0]);
+                }
+                
+                // Fetch subsurface drilling data
+                const subRes = await fetch('/api/v1/exploration/subsurface');
+                const subData = await subRes.json();
+                if (subData.points) {
+                    renderSubsurfaceOnMap(subData.points);
+                }
+            } catch (err) {
+                console.warn("API unavailable, using static data");
+            }
+        }
+        
+        function renderSubsurfaceOnMap(points) {
+            points.forEach(p => {
+                const color = p.confidence === 'High' ? '#38bdf8' : '#94a3b8';
+                L.circleMarker([p.lat, p.lon], {
+                    radius: 6,
+                    fillColor: color,
+                    color: '#ffffff',
+                    weight: 2,
+                    fillOpacity: 0.9
+                }).bindPopup(`
+                    <div style="min-width:180px;">
+                        <b style="color:${color};font-size:0.9rem;">${p.drill_id}</b><br>
+                        <span style="font-size:0.72rem;color:#f59e0b;">${p.provenance_type === 'PROTOTYPE_INTEGRATION_DEMO' ? '⚠️ Demo / Integration Schema — Not Field-Validated' : '📋 Published GSI Stratigraphic Reference'}</span><br>
+                        <span style="font-size:0.72rem;">Depth: ${p.depth_m}m • Intersect: ${p.ore_intersection_m}m</span><br>
+                        <span style="font-size:0.72rem;">Grade: ${p.manganese_grade_pct}% Mn • ${p.lithology}</span><br>
+                        <span style="font-size:0.68rem;color:#64748b;">Source: ${p.source}</span>
+                    </div>
+                `).addTo(map);
+            });
+        }
+
+        function renderZonesOnMap(zones) {
+            zones.forEach(z => {
+                const color = z.probability > 0.85 ? '#ef4444' : (z.probability > 0.65 ? '#f59e0b' : '#22c55e');
+                L.circleMarker([z.lat, z.lon], {
+                    radius: Math.max(4, z.probability * 8),
+                    fillColor: color,
+                    color: 'rgba(255,255,255,0.3)',
+                    weight: 1,
+                    fillOpacity: 0.75
+                }).addTo(map).on('click', () => selectZone(z));
+            });
+        }
+
+        async function selectZone(zone) {
+            document.getElementById('zone-id').innerText = zone.zone_id;
+            document.getElementById('zone-prob').innerText = zone.probability.toFixed(4);
+            document.getElementById('zone-coords').innerText = `${zone.lat.toFixed(3)}°N, ${zone.lon.toFixed(3)}°E`;
+            document.getElementById('zone-conf').innerText = `${zone.confidence_level} (Ensemble)`;
+
+            const badge = document.getElementById('zone-badge');
+            badge.innerText = zone.confidence_level;
+            badge.className = `badge-sm badge-${zone.confidence_level === 'HIGH' ? 'green' : (zone.confidence_level === 'MEDIUM' ? 'orange' : 'red')}`;
+
+            document.getElementById('zone-explanation').innerText = zone.explanation_text || "High iron oxide ratio with optimal topographic slope.";
+
+            // Gauge
+            const score = Math.round(zone.probability * 100);
+            document.getElementById('gauge-score').innerText = score;
+            const circumference = 2 * Math.PI * 60;
+            const offset = circumference - (score / 100) * circumference;
+            document.getElementById('gauge-arc').setAttribute('stroke-dashoffset', offset);
+
+            const priorityEl = document.getElementById('gauge-priority');
+            if (score >= 85) { priorityEl.innerText = 'High Exploration Priority'; priorityEl.className = 'gauge-label gauge-high'; }
+            else if (score >= 65) { priorityEl.innerText = 'Moderate Exploration Priority'; priorityEl.className = 'gauge-label gauge-medium'; }
+            else { priorityEl.innerText = 'Low Priority'; priorityEl.className = 'gauge-label gauge-low'; }
+
+            // SHAP Drivers
+            const driversList = document.getElementById('zone-drivers');
+            driversList.innerHTML = '';
+            if (zone.top_contributing_features) {
+                zone.top_contributing_features.forEach(f => {
+                    const cls = f.shap_impact >= 0 ? 'driver-positive' : 'driver-negative';
+                    driversList.innerHTML += `
+                        <li class="driver-item">
+                            <span class="driver-name">${f.display_name}</span>
+                            <span class="driver-val ${cls}">${f.value.toFixed(3)} (SHAP ${f.shap_impact >= 0 ? '+' : ''}${f.shap_impact.toFixed(3)})</span>
+                        </li>
+                    `;
+                });
+            }
+
+            // ROI
+            loadZoneROI(zone.zone_id);
+        }
+
+        async function loadZoneROI(zoneId) {
+            try {
+                const res = await fetch(`/api/v1/roi/${zoneId}`);
+                const roi = await res.json();
+                document.getElementById('roi-cost').innerText = `₹${roi.drilling_cost_breakdown.total_drilling_cost_lakhs.toFixed(2)}L`;
+                document.getElementById('roi-value').innerText = `₹${roi.resource_yield_estimate.expected_risk_adjusted_value_lakhs.toFixed(2)}L`;
+                document.getElementById('roi-rec').innerHTML = `
+                    <strong>${roi.financial_summary.recommendation === 'RECOMMENDED FOR PHASE-1 DRILLING' ? '✅' : '⏸️'} ${roi.financial_summary.recommendation}</strong>
+                    Net Gain: ₹${roi.financial_summary.expected_net_gain_lakhs.toFixed(2)} Lakhs (ROI: ${roi.financial_summary.estimated_roi_multiplier.toFixed(2)}x)
+                `;
+            } catch (err) {}
+        }
+
+        // ============================================================
+        // SHORTFALL DATA
+        // ============================================================
+        async function loadShortfallData() {
+            try {
+                const res = await fetch('/api/v1/shortfall/forecast');
+                shortfallData = await res.json();
+                renderShortfallChart(shortfallData.mine_forecasts || []);
+                renderShortfallMineList(shortfallData.mine_forecasts || []);
+            } catch (err) {}
+        }
+
+        function renderShortfallChart(forecasts) {
+            const ctx = document.getElementById('shortfallChart').getContext('2d');
+            if (shortfallChart) shortfallChart.destroy();
+            shortfallChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: forecasts.map(m => m.mine_name.split(' ')[0]),
+                    datasets: [{
+                        label: 'Shortfall %',
+                        data: forecasts.map(m => Number(m.predicted_shortfall_pct.toFixed(1))),
+                        backgroundColor: forecasts.map(m => m.shortfall_risk_category === 'HIGH' ? '#ef4444' : (m.shortfall_risk_category === 'MODERATE' ? '#f59e0b' : '#22c55e')),
+                        borderRadius: 4,
+                        borderSkipped: false
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { title: { display: true, text: 'Risk %', color: '#64748b', font: { size: 9 } }, ticks: { color: '#64748b', font: { size: 8 } }, grid: { color: 'rgba(56,189,248,0.06)' } },
+                        x: { ticks: { color: '#94a3b8', font: { size: 8 } }, grid: { display: false } }
+                    }
+                }
+            });
+        }
+
+        function renderShortfallMineList(forecasts) {
+            const container = document.getElementById('shortfall-mine-list');
+            container.innerHTML = '';
+            forecasts.forEach(m => {
+                const risk = Number(m.predicted_shortfall_pct).toFixed(1);
+                const riskCls = m.shortfall_risk_category === 'HIGH' ? 'risk-high' : (m.shortfall_risk_category === 'MODERATE' ? 'risk-medium' : 'risk-low');
+                container.innerHTML += `
+                    <div class="mine-card">
+                        <div class="mine-card-header">
+                            <span class="mine-card-name">${m.mine_name}</span>
+                            <span class="risk-badge ${riskCls}">${risk}%</span>
+                        </div>
+                        <div class="mine-card-meta">Driver: ${m.top_driving_factor.feature} (${m.top_driving_factor.current_value.toFixed(1)})</div>
+                        <div class="rec-box" style="margin-top:6px;">
+                            <strong>Action:</strong> ${m.recommended_corrective_action}
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        // ============================================================
+        // RADAR CHART (Feature Importance — not zone-specific SHAP)
+        // ============================================================
+        function initRadarChart() {
+            const ctx = document.getElementById('radarChart').getContext('2d');
+            radarChart = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Iron Oxide', 'Ferrous Mineral', 'Clay Ratio', 'Mn Indicator', 'NDVI', 'Elevation'],
+                    datasets: [{
+                        label: 'Feature Score',
+                        data: [0.85, 0.92, 0.78, 0.88, 0.45, 0.65],
+                        borderColor: '#38bdf8',
+                        backgroundColor: 'rgba(56, 189, 248, 0.15)',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#38bdf8',
+                        pointRadius: 3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        r: {
+                            grid: { color: 'rgba(56,189,248,0.08)' },
+                            angleLines: { color: 'rgba(56,189,248,0.08)' },
+                            ticks: { display: false },
+                            pointLabels: { color: '#94a3b8', font: { size: 9 } }
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateRadarChart(mine) {
+            if (!radarChart) return;
+            // Indicative feature importance scores for mine type (not SHAP; for zone-specific SHAP see Prospectivity tab)
+            const base = mine.grade / 50;
+            radarChart.data.datasets[0].data = [
+                Math.min(1, base * 0.75),
+                Math.min(1, base * 0.85),
+                Math.min(1, base * 0.55),
+                Math.min(1, base * 0.65),
+                Math.min(1, 0.35),
+                Math.min(1, mine.elevation / 1000)
+            ];
+            radarChart.update();
+        }
+
+        // ============================================================
+        // TREND CHART (Production vs Target)
+        // ============================================================
+        function initTrendChart() {
+            const ctx = document.getElementById('trendChart').getContext('2d');
+            trendChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    datasets: [
+                        {
+                            label: 'Target',
+                            data: [25000,25000,25000,25000,25000,25000,25000,25000,25000],
+                            borderColor: 'rgba(56,189,248,0.4)',
+                            borderDash: [5, 3],
+                            borderWidth: 1.5,
+                            fill: false,
+                            pointRadius: 0
+                        },
+                        {
+                            label: 'Actual',
+                            data: [24500,23800,21200,19800,20500,22100,23400,24100,24800],
+                            borderColor: '#38bdf8',
+                            backgroundColor: 'rgba(56,189,248,0.1)',
+                            borderWidth: 2,
+                            fill: true,
+                            pointRadius: 2,
+                            pointBackgroundColor: '#38bdf8',
+                            tension: 0.4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { ticks: { color: '#64748b', font: { size: 8 } }, grid: { color: 'rgba(56,189,248,0.06)' } },
+                        x: { ticks: { color: '#94a3b8', font: { size: 8 } }, grid: { display: false } }
+                    }
+                }
+            });
+        }
+
+        function updateTrendChart(mine) {
+            if (!trendChart) return;
+            const target = mine.target;
+            const targetArr = Array(9).fill(target);
+            const actualArr = Array(9).fill(0).map((_, i) => {
+                const seasonal = i >= 3 && i <= 5 ? 0.78 : 0.92;  // monsoon dip
+                return Math.round(target * seasonal * (0.85 + Math.random() * 0.15));
+            });
+            trendChart.data.datasets[0].data = targetArr;
+            trendChart.data.datasets[1].data = actualArr;
+            trendChart.update();
+        }
+
+        function updateCorrectiveAction(mine) {
+            const actions = {
+                "Underground": {
+                    title: "⛏️ Overhaul Shaft Hoist Winch & LHD Fleet",
+                    desc: "Deploy mechanical repair crews to underground shaft hoist / skip winches and stage standby load-haul-dumpers."
+                },
+                "Opencast": {
+                    title: "🚜 Deploy Heavy HEMM Excavator Repair",
+                    desc: "Surface machinery repair crews for front-line hydraulic excavators. Reallocate standby 35T dumpers."
+                }
+            };
+            const action = actions[mine.type] || actions["Opencast"];
+            document.getElementById('detail-corrective').innerHTML = `
+                <strong>${action.title}</strong>
+                ${action.desc}
+            `;
+        }
+
+        // ============================================================
+        // WHAT-IF SIMULATOR
+        // ============================================================
+        async function updateSimulator() {
+            const equip = parseFloat(document.getElementById('sim-equip').value);
+            const rain = parseFloat(document.getElementById('sim-rain').value);
+            const transport = parseFloat(document.getElementById('sim-transport').value);
+            const workforce = parseFloat(document.getElementById('sim-workforce').value);
+
+            document.getElementById('sim-equip-val').innerText = equip + '%';
+            document.getElementById('sim-rain-val').innerText = rain + '%';
+            document.getElementById('sim-transport-val').innerText = transport + '%';
+            document.getElementById('sim-workforce-val').innerText = workforce + '%';
+
+            // Connect to actual simulator API if available, fallback if not
+            try {
+                // Determine a mine ID to test (we use MINE_01 as default demo)
+                const mineId = window.selectedMine ? window.selectedMine.id : "MINE_01";
+                
+                const res = await fetch('/api/v1/shortfall/scenario', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        mine_id: mineId,
+                        equipment_downtime_hours: 100 - equip, // Rough proxy
+                        rainfall_mm: rain, // Use slider directly as mm
+                        workforce_availability_pct: workforce
+                    })
+                });
+                
+                if (res.ok) {
+                    const sim = await res.json();
+                    const shortfall = sim.scenario_shortfall_pct;
+                    const projectedOutput = sim.scenario_expected_tonnes;
+                    const revImpact = Math.abs((sim.improvement_tonnes) * 10500 / 10000000).toFixed(2);
+                    // Confidence is scenario-planning only, not a validated prediction
+                    const confidence = 'SCENARIO (Not Ground Truth)';
+
+                    document.getElementById('sim-output').innerText = projectedOutput.toLocaleString() + ' T';
+                    document.getElementById('sim-shortfall').innerText = shortfall.toFixed(1) + '%';
+                    document.getElementById('sim-shortfall').style.color = shortfall > 20 ? 'var(--accent-red)' : shortfall > 10 ? 'var(--accent-orange)' : 'var(--accent-green)';
+                    document.getElementById('sim-revenue').innerText = `₹${revImpact} Cr`;
+                    document.getElementById('sim-confidence').innerText = confidence;
+
+                    // AI Recommendation
+                    const recEl = document.getElementById('sim-recommendation');
+                    if (shortfall > 25) {
+                        recEl.innerHTML = `<strong>🚨 Critical Alert</strong>Projected shortfall exceeds 25%. Activate emergency protocols: deploy standby HEMM fleet, activate dewatering pumps, and request inter-mine workforce transfer.`;
+                    } else if (shortfall > 15) {
+                        recEl.innerHTML = `<strong>⚠️ Warning</strong>Moderate shortfall projected. Consider preventive equipment maintenance scheduling and rainfall contingency planning.`;
+                    } else {
+                        recEl.innerHTML = `<strong>✅ Nominal Operations</strong>Current parameters within acceptable range. No immediate corrective action required.`;
+                    }
+                    return; // Exit if API succeeded
+                }
+            } catch (err) {
+                console.warn("Simulator API not reachable, using frontend heuristic", err);
+            }
+
+            // Simple simulation model fallback
+            const baseOutput = 25000;
+            const equipFactor = equip / 100;
+            const rainPenalty = Math.max(0, (rain - 50) / 100) * 0.3;
+            const transportPenalty = transport / 100 * 0.15;
+            const workFactor = workforce / 100;
+            
+            const effectiveRate = equipFactor * workFactor * (1 - rainPenalty) * (1 - transportPenalty);
+            const projectedOutput = Math.round(baseOutput * effectiveRate);
+            const shortfall = Math.max(0, ((baseOutput - projectedOutput) / baseOutput * 100)).toFixed(1);
+            const revImpact = ((baseOutput - projectedOutput) * 10500 / 10000000).toFixed(2);
+            const confidence = 'SCENARIO (Not Ground Truth)';
+
+            document.getElementById('sim-output').innerText = projectedOutput.toLocaleString() + ' T';
+            document.getElementById('sim-shortfall').innerText = shortfall + '%';
+            document.getElementById('sim-shortfall').style.color = shortfall > 20 ? 'var(--accent-red)' : shortfall > 10 ? 'var(--accent-orange)' : 'var(--accent-green)';
+            document.getElementById('sim-revenue').innerText = `₹-${Math.abs(revImpact)} Cr`;
+            document.getElementById('sim-confidence').innerText = confidence;
+
+            // AI Recommendation
+            const recEl = document.getElementById('sim-recommendation');
+            if (shortfall > 25) {
+                recEl.innerHTML = `<strong>🚨 Critical Alert</strong>Projected shortfall exceeds 25%. Activate emergency protocols: deploy standby HEMM fleet, activate dewatering pumps, and request inter-mine workforce transfer.`;
+            } else if (shortfall > 15) {
+                recEl.innerHTML = `<strong>⚠️ Warning</strong>Moderate shortfall projected. Consider preventive equipment maintenance scheduling and rainfall contingency planning.`;
+            } else {
+                recEl.innerHTML = `<strong>✅ Nominal Operations</strong>Current parameters within acceptable range. No immediate corrective action required.`;
+            }
+        }
+
+        // ============================================================
+        // BACKTEST
+        // ============================================================
+        async function runLiveBacktest() {
+            const key = document.getElementById('backtest-select').value;
+            const target = MINE_COORDS[key];
+            try {
+                const res = await fetch('/api/v1/backtest', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ deposit_name: target.name, lat: target.lat, lon: target.lon, expected_min_probability: 0.70 })
+                });
+                const result = await res.json();
+                const box = document.getElementById('backtest-result');
+                box.style.display = 'block';
+                box.className = result.backtest_passed ? 'backtest-box' : 'backtest-box failed';
+                document.getElementById('backtest-verdict-title').innerText = result.backtest_passed ? "✅ BACKTEST PASSED" : "❌ BACKTEST FAILED";
+                document.getElementById('backtest-verdict-desc').innerText = result.verdict;
+                map.setView([target.lat, target.lon], 11);
+            } catch (err) {}
+        }
+
+        // ============================================================
+        // CHAT
+        // ============================================================
+        function sendQuickPrompt(text) {
+            document.getElementById('chatInput').value = text;
+            sendChatMessage();
+        }
+
+        function formatMd(text) {
+            if (!text) return '';
+            return text
+                .replace(/### (.*?)(?:\n|$)/g, '<div style="font-weight:700;font-size:0.86rem;color:var(--accent);margin:6px 0 2px 0;">$1</div>')
+                .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+                .replace(/\*(.*?)\*/g, '<i>$1</i>')
+                .replace(/`([^`]+)`/g, '<code style="background:var(--bg-card);padding:1px 4px;border-radius:3px;font-size:0.76rem;color:var(--accent);">$1</code>')
+                .replace(/\n- (.*?)(?:\n|$)/g, '<div style="padding-left:8px;margin:2px 0;">• $1</div>')
+                .replace(/\n\n/g, '<br><br>')
+                .replace(/\n/g, '<br>');
+        }
+
+        async function sendChatMessage() {
+            const input = document.getElementById('chatInput');
+            const text = input.value.trim();
+            if (!text) return;
+            const container = document.getElementById('chatMessages');
+            container.innerHTML += `<div class="chat-bubble user">${text}</div>`;
+            input.value = '';
+            container.scrollTop = container.scrollHeight;
+            try {
+                const res = await fetch('/api/v1/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: text })
+                });
+                const data = await res.json();
+                container.innerHTML += `<div class="chat-bubble bot fade-in">${formatMd(data.answer)}</div>`;
+                container.scrollTop = container.scrollHeight;
+            } catch (e) {
+                container.innerHTML += `<div class="chat-bubble bot" style="color:var(--accent-red);">Error: Backend not reachable. Start server at http://localhost:8000.</div>`;
+            }
+        }
+
+        // ============================================================
+        // TAB SWITCHING
+        // ============================================================
+        function switchMainTab(tabName, element) {
+            document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+            element.classList.add('active');
+            document.querySelectorAll('.panel-left > .tab-page').forEach(p => p.classList.remove('active'));
+            const page = document.getElementById('page-' + tabName);
+            if (page) page.classList.add('active');
+        }
+
+        function switchSubTab(tabId, element) {
+            const parent = element.closest('.tab-page');
+            parent.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
+            element.classList.add('active');
+            parent.querySelectorAll('.tab-page').forEach(p => p.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        }
+
+        function toggleLayer(layerName) {
+            console.log('Toggle layer:', layerName);
+            // Layer toggling would connect to actual GeoJSON overlay layers
+        }
+    </script>
+</body>
+</html>

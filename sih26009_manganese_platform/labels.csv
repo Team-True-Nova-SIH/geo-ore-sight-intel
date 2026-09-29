@@ -1,0 +1,85 @@
+lat,lon,mine_name,district,state,deposit_type,label,label_type,source_reference
+21.8464,80.2281,Balaghat (Bharveli),Balaghat,Madhya Pradesh,Underground,1,Positive (MOIL Active Mine),MOIL Annual Report / Forest Clearance Portal
+21.9714,80.4458,Ukwa Mine,Balaghat,Madhya Pradesh,Underground,1,Positive (MOIL Active Mine),MOIL Annual Report / IBM Directory
+21.7000,79.6667,Tirodi Mine,Balaghat,Madhya Pradesh,Opencast,1,Positive (MOIL Active Mine),MOIL Operations & GSI Toposheet 55 O/10
+21.7000,79.6667,Sitapatore / Sukli,Balaghat,Madhya Pradesh,Opencast,1,Positive (MOIL Active Mine),Forest Clearance Portal / GSI Mineral Map
+21.4106,79.2656,Kandri Mine,Nagpur,Maharashtra,Underground,1,Positive (MOIL Active Mine),MOIL Operations / Wikimapia Geocoding
+21.4000,79.2667,Munsar Mine,Nagpur,Maharashtra,Underground,1,Positive (MOIL Active Mine),MOIL Annual Report / MPCB Clearance
+21.4000,79.2667,Beldongri Mine,Nagpur,Maharashtra,Underground,1,Positive (MOIL Active Mine),MOIL Annual Report / GSI Study
+21.4078,78.9861,Gumgaon Mine,Nagpur,Maharashtra,Underground,1,Positive (MOIL Active Mine),MOIL Operations / Forest Clearance Portal
+21.5478,79.7431,Dongri Buzurg Mine,Bhandara,Maharashtra,Opencast,1,Positive (MOIL Active Mine),MOIL Annual Report / EMD Facility
+21.5342,79.7461,Chikla Mine,Bhandara,Maharashtra,Underground,1,Positive (MOIL Active Mine),MOIL Operations / Shaft Project 2024
+21.8200,80.2100,Bharveli East Extension,Balaghat,Madhya Pradesh,GSI Deposit,1,Positive (GSI Bhukosh Belt),GSI Bhukosh Mineral Map 55 O/14
+21.8600,80.2500,Garra Prospect,Balaghat,Madhya Pradesh,GSI Prospect,1,Positive (GSI Bhukosh Belt),GSI Mineral Bulletin Manganese 2022
+21.6800,79.6500,Tirodi South Ridge,Balaghat,Madhya Pradesh,GSI Prospect,1,Positive (GSI Bhukosh Belt),GSI Bhukosh Sausar Group Survey
+21.7200,79.6800,Miragpur Block,Balaghat,Madhya Pradesh,GSI Prospect,1,Positive (GSI Bhukosh Belt),Madhya Pradesh Mining Dept Auction Block
+21.9500,80.4200,Gudma Occurrence,Balaghat,Madhya Pradesh,GSI Prospect,1,Positive (GSI Bhukosh Belt),GSI Special Publication 85
+21.5500,79.7200,Pauni Manganese Zone,Bhandara,Maharashtra,GSI Prospect,1,Positive (GSI Bhukosh Belt),GSI Bhukosh Maharashtra Belt Map
+21.5200,79.7600,Chikla West Block,Bhandara,Maharashtra,GSI Prospect,1,Positive (GSI Bhukosh Belt),IBM Mineral Map Bhandara
+21.4200,79.2800,Mansar Hill Prospect,Nagpur,Maharashtra,GSI Prospect,1,Positive (GSI Bhukosh Belt),GSI Sausar Group Memoir
+21.3900,78.9600,Ramdongri Block,Nagpur,Maharashtra,GSI Prospect,1,Positive (GSI Bhukosh Belt),IBM Directory Maharashtra
+21.4300,79.3000,Kandri Extension,Nagpur,Maharashtra,GSI Prospect,1,Positive (GSI Bhukosh Belt),GSI Bhukosh Nagpur Sheet
+21.8800,80.3000,Laugur Block,Balaghat,Madhya Pradesh,GSI Prospect,1,Positive (GSI Bhukosh Belt),MP Mineral Resource Department
+21.7500,79.8000,Waraseoni Ridge,Balaghat,Madhya Pradesh,GSI Prospect,1,Positive (GSI Bhukosh Belt),GSI Memoir Vol 124
+21.1500,79.0500,Nagpur South Alluvium,Nagpur,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Sampled >15km from Sausar Belt
+21.1200,79.1000,Hingna Agricultural Zone,Nagpur,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Sampled >15km from Sausar Belt
+21.1000,79.2500,Umred Basalt Plain,Nagpur,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap Basalt cover zone
+21.0800,79.4000,Kuhi Agricultural Plain,Nagpur,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap Basalt cover zone
+21.0500,79.5500,Bhiwapur Alluvial Zone,Nagpur,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Sampled >20km from Sausar Belt
+21.2000,80.1000,Gondia South Plain,Gondia,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Alluvial valley outside ore corridor
+21.1800,80.2000,Goregaon Agricultural Area,Gondia,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Alluvial valley outside ore corridor
+21.1500,80.3500,Amgaon Plain,Gondia,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Granitoid gneiss basement zone
+21.1000,80.4500,Salekasa Hill Forest,Gondia,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Granitoid terrain no Mn association
+22.0500,79.1500,Seoni Plateau North,Seoni,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap capping zone
+22.1000,79.2500,Chhindwara Border Basalt,Seoni,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap basalt cover
+22.0800,79.4000,Keolari Alluvial Valley,Seoni,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Wainganga flood plain
+22.1200,79.5500,Ghansor Forest Zone,Seoni,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Granitoid terrain
+22.0200,79.8500,Lalburra Flatland,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Agricultural plain >10km from belt
+22.1500,80.0500,Paraswada Plateau,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Lateritic plateau no gondite horizon
+22.2000,80.2000,Baihar Granite Gneiss,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Archean granite gneiss basement
+22.2500,80.3500,Kanha Buffer Forest,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Non-mineralized forest belt
+21.3000,80.4000,Tirora Alluvial Flat,Gondia,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Wainganga basin sediment
+21.2500,79.8500,Tumsar South Plain,Bhandara,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Agricultural valley >8km from fold axis
+21.2200,79.6000,Mohpa Basalt Zone,Nagpur,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap basalt
+21.1800,78.8500,Katol Plain West,Nagpur,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap basalt cover
+21.2800,78.9000,Kalameshwar Plain,Nagpur,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap basalt cover
+21.0200,79.7000,Pauni South Alluvium,Bhandara,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Wainganga alluvial valley
+20.9500,79.8500,Lakhandur Flat,Bhandara,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Outside Sausar Group fold belt
+22.1800,80.4800,Birsa Hill Gneiss,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Archean Basement Gneiss
+22.0600,79.7500,Barghat Plateau,Seoni,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Deccan basalt capping
+21.3500,80.4800,Kamtha Plain,Gondia,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Granite-gneiss terrain
+21.0500,80.1500,Sadak Arjuni Plain,Gondia,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Alluvial plain
+21.4800,80.4500,Lanji East Valley,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Dongargarh granite belt
+21.5200,80.4800,Karanja Hill Gneiss,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Dongargarh granite belt
+21.1500,79.8000,Bhandara South Alluvium,Bhandara,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Wainganga river basin
+21.0800,79.9500,Sakoli Metasediment,Bhandara,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),"Sakoli Group (copper/gold, no Mn)"
+21.0200,80.0500,Lakhani Plain,Bhandara,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Outside manganese syncline axis
+21.6500,80.4500,Kirnapur East Plain,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Alluvial valley
+21.7800,80.4500,Hatta Agricultural Area,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Alluvial valley
+21.6200,79.4500,Tirodi North Basalt,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap capping north of thrust
+22.1000,79.9500,Seoni East Forest,Seoni,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap cover
+22.1500,79.8000,Chhapara Plateau,Seoni,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap cover
+21.2500,79.4500,Parseoni South Alluvium,Nagpur,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Pench river alluvial flat
+21.1800,79.5000,Ramtek South Plain,Nagpur,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Alluvial valley
+21.0200,79.3500,Bori Plain,Nagpur,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap basalt
+20.9800,79.2000,Butibori Industrial Zone,Nagpur,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap basalt
+20.9200,79.0500,Wardha Border Flat,Nagpur,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap basalt
+21.8500,79.4000,Chhindwara East Border,Chhindwara,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Granite-gneiss terrain
+21.9200,79.3000,Chaurai Plain,Chhindwara,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap cover
+22.0200,79.1000,Amarwara South,Chhindwara,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Deccan Trap cover
+21.4500,80.3500,Gondia North Forest,Gondia,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Granite terrain
+21.4000,80.4200,Dawanwada Flat,Gondia,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Alluvial plain
+21.6800,80.4800,Lanji South Plain,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Dongargarh group granite
+21.7200,80.5000,Bolegaon Valley,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Dongargarh group granite
+21.2800,80.2500,Katasangi Flat,Gondia,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Alluvial valley
+21.3200,80.3500,Ekodi Plain,Gondia,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Alluvial valley
+21.3800,79.5200,Mohadi Plain,Bhandara,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Outside Sausar horizon
+21.4200,79.6200,Tumsar East Flat,Bhandara,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Outside Sausar horizon
+21.4800,79.6500,Sihora South,Bhandara,Maharashtra,Non-Mineralized,0,Negative (Pseudo-Background),Alluvial plain
+21.7800,79.5000,Katangi West Basalt,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Deccan trap cover
+21.8200,79.5500,Waraseoni West Plain,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Alluvial valley
+21.9000,79.7000,Lalburra North Plain,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Alluvial valley
+21.9800,79.9000,Wainganga Floodplain,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Wainganga river sediments
+22.0400,80.1500,Ukwa North Plateau,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Lateritic plateau capping
+22.0800,80.2800,Garhi Forest Range,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Archean Gneiss
+22.1200,80.4000,Mukki Forest Border,Balaghat,Madhya Pradesh,Non-Mineralized,0,Negative (Pseudo-Background),Archean Gneiss

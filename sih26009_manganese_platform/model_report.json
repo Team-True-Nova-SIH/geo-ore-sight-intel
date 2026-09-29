@@ -1,0 +1,97 @@
+{
+  "scientific_framework": {
+    "prospectivity_definition": "AI Prospectivity / Target Zones for Geological Core Drilling",
+    "reserve_disclaimer": "Prospectivity scores represent relative favorability for field investigation. They do NOT constitute UNFC/JORC mineral reserve tonnage.",
+    "excluded_features": [
+      "rainfall_mm",
+      "soil_moisture",
+      "land_temperature"
+    ],
+    "exclusion_rationale": "Modern climate and rainfall do not dictate Proterozoic gondite mineralization. Weather features are strictly relegated to Layer 5 Production Shortfall Modeling."
+  },
+  "sample_summary": {
+    "total_samples": 84,
+    "positive_occurrences": 22,
+    "negative_background_points": 62,
+    "scale_pos_weight": 2.8181818181818183,
+    "spatial_clusters_dbscan": 67
+  },
+  "baseline_model": {
+    "name": "Random Forest (Spectral Only)",
+    "features_used": [
+      "iron_oxide_ratio",
+      "ferrous_mineral_index",
+      "clay_mineral_ratio",
+      "mn_indicator"
+    ],
+    "train_auc": 1.0,
+    "5fold_cv_auc_mean": 0.915128205128205,
+    "repeated_cv_auc_mean": 0.9172051282051282,
+    "repeated_cv_auc_std": 0.0960956541860852,
+    "loocv_roc_auc": 0.8995601173020528,
+    "loocv_pr_auc": 0.9010937318026442,
+    "sensitivity_recall": 0.7727272727272727,
+    "specificity": 1.0,
+    "brier_calibration_score": 0.062447385569123014,
+    "spatial_cv_auc_mean": 0.9421212121212121,
+    "spatial_cv_auc_std": 0.10761800280198974,
+    "feature_importances": {
+      "iron_oxide_ratio": 0.10776284306075988,
+      "ferrous_mineral_index": 0.47941764423486105,
+      "clay_mineral_ratio": 0.22778978388500604,
+      "mn_indicator": 0.18502972881937318
+    }
+  },
+  "improved_model": {
+    "name": "XGBoost (Geological Structure + Spectral + Topography)",
+    "features_used": [
+      "iron_oxide_ratio",
+      "ferrous_mineral_index",
+      "clay_mineral_ratio",
+      "ndvi",
+      "mn_indicator",
+      "elevation",
+      "slope",
+      "aspect",
+      "fault_proximity_km"
+    ],
+    "train_auc": 0.9941348973607038,
+    "5fold_cv_auc_mean": 0.923076923076923,
+    "repeated_cv_auc_mean": 0.926948717948718,
+    "repeated_cv_auc_std": 0.10000468102127517,
+    "loocv_roc_auc": 0.8995601173020528,
+    "loocv_pr_auc": 0.901948265831665,
+    "sensitivity_recall": 0.7727272727272727,
+    "specificity": 0.9516129032258065,
+    "brier_calibration_score": 0.06822641248342032,
+    "spatial_cv_auc_mean": 0.9357575757575758,
+    "spatial_cv_auc_std": 0.09859248197654669,
+    "spatial_cv_n_groups": 67,
+    "feature_importances": {
+      "iron_oxide_ratio": 0.03350535035133362,
+      "ferrous_mineral_index": 0.18372920155525208,
+      "clay_mineral_ratio": 0.18014861643314362,
+      "ndvi": 0.03303834795951843,
+      "mn_indicator": 0.2500467300415039,
+      "elevation": 0.017066195607185364,
+      "slope": 0.09690077602863312,
+      "aspect": 0.026393000036478043,
+      "fault_proximity_km": 0.17917181551456451
+    },
+    "hyperparameters": {
+      "max_depth": 3,
+      "min_child_weight": 3,
+      "reg_alpha": 0.5,
+      "reg_lambda": 2.0,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8
+    }
+  },
+  "measured_validation_comparison": {
+    "roc_auc_gain": 0.0,
+    "pr_auc_gain": 0.0009,
+    "spatial_cv_auc_gain": -0.0064,
+    "improved_calibration_brier_diff": 0.0058,
+    "verdict": "Adding geological structural proximity (fault proximity) and terrain indices to spectral ratios improved LOOCV ROC-AUC by +0.0000 (from 0.8996 to 0.8996) and PR-AUC by +0.0009 (from 0.9011 to 0.9019)."
+  }
+}

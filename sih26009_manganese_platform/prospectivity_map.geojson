@@ -1,0 +1,3755 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.26572,
+          21.38201
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1446",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.38201,
+        "lon": 79.26572,
+        "probability": 0.9668999910354614,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6056,
+        "ferrous_mineral_index": 1.7443,
+        "clay_mineral_ratio": 1.7252,
+        "elevation_m": 310.8,
+        "slope_deg": 23.98,
+        "fault_proximity_km": 3.17
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.45395,
+          21.99818
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_479",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.99818,
+        "lon": 80.45395,
+        "probability": 0.9668999910354614,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.671,
+        "ferrous_mineral_index": 1.9337,
+        "clay_mineral_ratio": 1.6277,
+        "elevation_m": 333.1,
+        "slope_deg": 26.21,
+        "fault_proximity_km": 3.11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.45709,
+          22.01528
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1371",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 22.01528,
+        "lon": 80.45709,
+        "probability": 0.9668999910354614,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6325,
+        "ferrous_mineral_index": 1.8699,
+        "clay_mineral_ratio": 1.6151,
+        "elevation_m": 332.0,
+        "slope_deg": 20.95,
+        "fault_proximity_km": 5.03
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.27829,
+          21.36048
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1240",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.36048,
+        "lon": 79.27829,
+        "probability": 0.9668999910354614,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.549,
+        "ferrous_mineral_index": 1.5954,
+        "clay_mineral_ratio": 1.5758,
+        "elevation_m": 342.3,
+        "slope_deg": 20.25,
+        "fault_proximity_km": 5.74
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.6841,
+          21.6887
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_25",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.6887,
+        "lon": 79.6841,
+        "probability": 0.9659000039100647,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6977,
+        "ferrous_mineral_index": 1.7227,
+        "clay_mineral_ratio": 1.6699,
+        "elevation_m": 280.4,
+        "slope_deg": 27.5,
+        "fault_proximity_km": 2.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.48508,
+          21.97549
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_262",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.97549,
+        "lon": 80.48508,
+        "probability": 0.9659000039100647,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.539,
+        "ferrous_mineral_index": 1.6371,
+        "clay_mineral_ratio": 1.7256,
+        "elevation_m": 316.9,
+        "slope_deg": 26.65,
+        "fault_proximity_km": 4.38
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.68283,
+          21.65814
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1264",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.65814,
+        "lon": 79.68283,
+        "probability": 0.9659000039100647,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6035,
+        "ferrous_mineral_index": 1.5528,
+        "clay_mineral_ratio": 1.7465,
+        "elevation_m": 335.4,
+        "slope_deg": 26.54,
+        "fault_proximity_km": 4.98
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.66796,
+          21.69803
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1377",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.69803,
+        "lon": 79.66796,
+        "probability": 0.9659000039100647,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.7179,
+        "ferrous_mineral_index": 1.8448,
+        "clay_mineral_ratio": 1.6277,
+        "elevation_m": 329.2,
+        "slope_deg": 26.36,
+        "fault_proximity_km": 0.26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.23286,
+          21.3984
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_867",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.3984,
+        "lon": 79.23286,
+        "probability": 0.9656000137329102,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5237,
+        "ferrous_mineral_index": 1.9726,
+        "clay_mineral_ratio": 1.5971,
+        "elevation_m": 388.5,
+        "slope_deg": 22.61,
+        "fault_proximity_km": 3.88
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.28603,
+          21.39645
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_856",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.39645,
+        "lon": 79.28603,
+        "probability": 0.9656000137329102,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5974,
+        "ferrous_mineral_index": 1.765,
+        "clay_mineral_ratio": 1.7502,
+        "elevation_m": 361.3,
+        "slope_deg": 25.78,
+        "fault_proximity_km": 2.76
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.48494,
+          22.03446
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_706",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 22.03446,
+        "lon": 80.48494,
+        "probability": 0.9656000137329102,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4815,
+        "ferrous_mineral_index": 1.5577,
+        "clay_mineral_ratio": 1.6249,
+        "elevation_m": 359.5,
+        "slope_deg": 26.19,
+        "fault_proximity_km": 8.24
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.44768,
+          22.02155
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1426",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 22.02155,
+        "lon": 80.44768,
+        "probability": 0.9656000137329102,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5956,
+        "ferrous_mineral_index": 1.7508,
+        "clay_mineral_ratio": 1.6236,
+        "elevation_m": 398.1,
+        "slope_deg": 22.05,
+        "fault_proximity_km": 5.57
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.4815,
+          22.00677
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1012",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 22.00677,
+        "lon": 80.4815,
+        "probability": 0.9649999737739563,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4875,
+        "ferrous_mineral_index": 1.5896,
+        "clay_mineral_ratio": 1.6476,
+        "elevation_m": 298.8,
+        "slope_deg": 24.25,
+        "fault_proximity_km": 5.58
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.6131,
+          21.64394
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_874",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.64394,
+        "lon": 79.6131,
+        "probability": 0.9646000266075134,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5531,
+        "ferrous_mineral_index": 1.5467,
+        "clay_mineral_ratio": 1.6485,
+        "elevation_m": 383.3,
+        "slope_deg": 22.35,
+        "fault_proximity_km": 8.61
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.42509,
+          22.00132
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_412",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 22.00132,
+        "lon": 80.42509,
+        "probability": 0.9646000266075134,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5629,
+        "ferrous_mineral_index": 1.699,
+        "clay_mineral_ratio": 1.6336,
+        "elevation_m": 352.2,
+        "slope_deg": 22.0,
+        "fault_proximity_km": 4.04
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.73893,
+          21.67115
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_583",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.67115,
+        "lon": 79.73893,
+        "probability": 0.9642000198364258,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4735,
+        "ferrous_mineral_index": 1.599,
+        "clay_mineral_ratio": 1.5059,
+        "elevation_m": 324.1,
+        "slope_deg": 22.59,
+        "fault_proximity_km": 8.63
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.66114,
+          21.6888
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_864",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.6888,
+        "lon": 79.66114,
+        "probability": 0.9639000296592712,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.7402,
+        "ferrous_mineral_index": 1.8717,
+        "clay_mineral_ratio": 1.5556,
+        "elevation_m": 212.8,
+        "slope_deg": 26.06,
+        "fault_proximity_km": 1.39
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.4164,
+          21.94355
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1025",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.94355,
+        "lon": 80.4164,
+        "probability": 0.9639000296592712,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5094,
+        "ferrous_mineral_index": 1.6499,
+        "clay_mineral_ratio": 1.568,
+        "elevation_m": 228.0,
+        "slope_deg": 26.66,
+        "fault_proximity_km": 4.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.47357,
+          21.96963
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_676",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.96963,
+        "lon": 80.47357,
+        "probability": 0.9639000296592712,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6044,
+        "ferrous_mineral_index": 1.879,
+        "clay_mineral_ratio": 1.6247,
+        "elevation_m": 244.0,
+        "slope_deg": 22.2,
+        "fault_proximity_km": 3.09
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.45482,
+          21.96536
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_472",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.96536,
+        "lon": 80.45482,
+        "probability": 0.9638000130653381,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.7108,
+        "ferrous_mineral_index": 1.8334,
+        "clay_mineral_ratio": 1.6866,
+        "elevation_m": 254.2,
+        "slope_deg": 26.12,
+        "fault_proximity_km": 1.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.25122,
+          21.35847
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1297",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.35847,
+        "lon": 79.25122,
+        "probability": 0.9638000130653381,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5767,
+        "ferrous_mineral_index": 1.6454,
+        "clay_mineral_ratio": 1.5929,
+        "elevation_m": 268.3,
+        "slope_deg": 22.5,
+        "fault_proximity_km": 6.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.69301,
+          21.68563
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_789",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.68563,
+        "lon": 79.69301,
+        "probability": 0.9638000130653381,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6422,
+        "ferrous_mineral_index": 1.5534,
+        "clay_mineral_ratio": 1.6129,
+        "elevation_m": 264.6,
+        "slope_deg": 25.43,
+        "fault_proximity_km": 3.33
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.73742,
+          21.59773
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_341",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.59773,
+        "lon": 79.73742,
+        "probability": 0.963699996471405,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5211,
+        "ferrous_mineral_index": 1.7118,
+        "clay_mineral_ratio": 1.5631,
+        "elevation_m": 453.0,
+        "slope_deg": 22.3,
+        "fault_proximity_km": 5.58
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.75513,
+          21.52152
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_609",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.52152,
+        "lon": 79.75513,
+        "probability": 0.963699996471405,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6779,
+        "ferrous_mineral_index": 1.6047,
+        "clay_mineral_ratio": 1.5767,
+        "elevation_m": 537.1,
+        "slope_deg": 22.77,
+        "fault_proximity_km": 3.21
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.29369,
+          21.40538
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_369",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.40538,
+        "lon": 79.29369,
+        "probability": 0.963699996471405,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5923,
+        "ferrous_mineral_index": 1.7937,
+        "clay_mineral_ratio": 1.6578,
+        "elevation_m": 438.8,
+        "slope_deg": 30.58,
+        "fault_proximity_km": 3.17
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.71132,
+          21.52301
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1026",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.52301,
+        "lon": 79.71132,
+        "probability": 0.963699996471405,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5428,
+        "ferrous_mineral_index": 1.61,
+        "clay_mineral_ratio": 1.6701,
+        "elevation_m": 491.4,
+        "slope_deg": 20.43,
+        "fault_proximity_km": 4.47
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.23084,
+          21.35015
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1110",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.35015,
+        "lon": 79.23084,
+        "probability": 0.9631999731063843,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4741,
+        "ferrous_mineral_index": 1.6529,
+        "clay_mineral_ratio": 1.524,
+        "elevation_m": 272.4,
+        "slope_deg": 35.88,
+        "fault_proximity_km": 7.74
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.42428,
+          21.99646
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_576",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.99646,
+        "lon": 80.42428,
+        "probability": 0.963100016117096,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6237,
+        "ferrous_mineral_index": 1.6286,
+        "clay_mineral_ratio": 1.5323,
+        "elevation_m": 328.5,
+        "slope_deg": 26.91,
+        "fault_proximity_km": 3.67
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.26705,
+          21.36414
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_843",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.36414,
+        "lon": 79.26705,
+        "probability": 0.963100016117096,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6942,
+        "ferrous_mineral_index": 1.782,
+        "clay_mineral_ratio": 1.5129,
+        "elevation_m": 335.3,
+        "slope_deg": 23.77,
+        "fault_proximity_km": 5.16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.4263,
+          22.01885
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1221",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 22.01885,
+        "lon": 80.4263,
+        "probability": 0.963100016117096,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5548,
+        "ferrous_mineral_index": 1.5504,
+        "clay_mineral_ratio": 1.5445,
+        "elevation_m": 347.4,
+        "slope_deg": 34.4,
+        "fault_proximity_km": 5.69
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.68181,
+          21.66655
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_483",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.66655,
+        "lon": 79.68181,
+        "probability": 0.9628000259399414,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6805,
+        "ferrous_mineral_index": 1.8018,
+        "clay_mineral_ratio": 1.5032,
+        "elevation_m": 382.9,
+        "slope_deg": 20.97,
+        "fault_proximity_km": 4.07
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.2724,
+          21.41202
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_785",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.41202,
+        "lon": 79.2724,
+        "probability": 0.9625999927520752,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6817,
+        "ferrous_mineral_index": 1.7959,
+        "clay_mineral_ratio": 1.6132,
+        "elevation_m": 427.4,
+        "slope_deg": 30.91,
+        "fault_proximity_km": 0.77
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.25056,
+          21.40229
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1401",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.40229,
+        "lon": 79.25056,
+        "probability": 0.9625999927520752,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.622,
+        "ferrous_mineral_index": 1.7169,
+        "clay_mineral_ratio": 1.7174,
+        "elevation_m": 434.6,
+        "slope_deg": 26.58,
+        "fault_proximity_km": 1.91
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.26552,
+          21.42636
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_603",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.42636,
+        "lon": 79.26552,
+        "probability": 0.9625999927520752,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6784,
+        "ferrous_mineral_index": 1.9352,
+        "clay_mineral_ratio": 1.5928,
+        "elevation_m": 475.8,
+        "slope_deg": 31.08,
+        "fault_proximity_km": 1.75
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.24102,
+          21.40101
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_668",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.40101,
+        "lon": 79.24102,
+        "probability": 0.9625999927520752,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4858,
+        "ferrous_mineral_index": 1.8054,
+        "clay_mineral_ratio": 1.6349,
+        "elevation_m": 431.3,
+        "slope_deg": 23.77,
+        "fault_proximity_km": 2.93
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.75227,
+          21.55233
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_276",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.55233,
+        "lon": 79.75227,
+        "probability": 0.9625999927520752,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6273,
+        "ferrous_mineral_index": 1.7377,
+        "clay_mineral_ratio": 1.6592,
+        "elevation_m": 533.2,
+        "slope_deg": 29.41,
+        "fault_proximity_km": 1.14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.71991,
+          21.49351
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1268",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.49351,
+        "lon": 79.71991,
+        "probability": 0.9625999927520752,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5394,
+        "ferrous_mineral_index": 1.5808,
+        "clay_mineral_ratio": 1.7266,
+        "elevation_m": 539.1,
+        "slope_deg": 20.04,
+        "fault_proximity_km": 6.55
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.78854,
+          21.53072
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_934",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.53072,
+        "lon": 79.78854,
+        "probability": 0.9625999927520752,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6194,
+        "ferrous_mineral_index": 1.581,
+        "clay_mineral_ratio": 1.6433,
+        "elevation_m": 572.8,
+        "slope_deg": 26.65,
+        "fault_proximity_km": 5.39
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.69117,
+          21.55341
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_606",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.55341,
+        "lon": 79.69117,
+        "probability": 0.9625999927520752,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.655,
+        "ferrous_mineral_index": 1.6936,
+        "clay_mineral_ratio": 1.6216,
+        "elevation_m": 521.4,
+        "slope_deg": 24.02,
+        "fault_proximity_km": 5.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.7547,
+          21.52873
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_351",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.52873,
+        "lon": 79.7547,
+        "probability": 0.9625999927520752,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6571,
+        "ferrous_mineral_index": 1.8137,
+        "clay_mineral_ratio": 1.6288,
+        "elevation_m": 557.8,
+        "slope_deg": 22.3,
+        "fault_proximity_km": 2.48
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.29286,
+          21.40457
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_235",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.40457,
+        "lon": 79.29286,
+        "probability": 0.9625999927520752,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6784,
+        "ferrous_mineral_index": 1.8952,
+        "clay_mineral_ratio": 1.7085,
+        "elevation_m": 419.3,
+        "slope_deg": 30.13,
+        "fault_proximity_km": 3.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.41035,
+          21.9736
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_359",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.9736,
+        "lon": 80.41035,
+        "probability": 0.961899995803833,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5875,
+        "ferrous_mineral_index": 1.6456,
+        "clay_mineral_ratio": 1.5327,
+        "elevation_m": 256.7,
+        "slope_deg": 28.63,
+        "fault_proximity_km": 3.94
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.40975,
+          22.0277
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_752",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 22.0277,
+        "lon": 80.40975,
+        "probability": 0.9617999792098999,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5809,
+        "ferrous_mineral_index": 1.706,
+        "clay_mineral_ratio": 1.5386,
+        "elevation_m": 369.4,
+        "slope_deg": 20.53,
+        "fault_proximity_km": 7.42
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.43348,
+          22.0135
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1122",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 22.0135,
+        "lon": 80.43348,
+        "probability": 0.9617999792098999,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5819,
+        "ferrous_mineral_index": 1.6891,
+        "clay_mineral_ratio": 1.548,
+        "elevation_m": 349.9,
+        "slope_deg": 20.32,
+        "fault_proximity_km": 4.87
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.27274,
+          21.45662
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_15",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.45662,
+        "lon": 79.27274,
+        "probability": 0.9606999754905701,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5484,
+        "ferrous_mineral_index": 1.6493,
+        "clay_mineral_ratio": 1.5513,
+        "elevation_m": 505.1,
+        "slope_deg": 24.57,
+        "fault_proximity_km": 5.17
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.81095,
+          21.5826
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_303",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.5826,
+        "lon": 79.81095,
+        "probability": 0.9606999754905701,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5462,
+        "ferrous_mineral_index": 1.5898,
+        "clay_mineral_ratio": 1.4903,
+        "elevation_m": 488.8,
+        "slope_deg": 20.08,
+        "fault_proximity_km": 8.46
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.79155,
+          21.53898
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_475",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.53898,
+        "lon": 79.79155,
+        "probability": 0.9606999754905701,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5714,
+        "ferrous_mineral_index": 1.5999,
+        "clay_mineral_ratio": 1.5123,
+        "elevation_m": 550.9,
+        "slope_deg": 21.7,
+        "fault_proximity_km": 5.47
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.39909,
+          22.02515
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_513",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 22.02515,
+        "lon": 80.39909,
+        "probability": 0.9606999754905701,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4748,
+        "ferrous_mineral_index": 1.6253,
+        "clay_mineral_ratio": 1.4842,
+        "elevation_m": 390.7,
+        "slope_deg": 20.31,
+        "fault_proximity_km": 7.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.27282,
+          21.46301
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_593",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.46301,
+        "lon": 79.27282,
+        "probability": 0.9606999754905701,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5983,
+        "ferrous_mineral_index": 1.7174,
+        "clay_mineral_ratio": 1.5515,
+        "elevation_m": 508.0,
+        "slope_deg": 19.88,
+        "fault_proximity_km": 5.87
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.41069,
+          21.96203
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_241",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.96203,
+        "lon": 80.41069,
+        "probability": 0.9599000215530396,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6651,
+        "ferrous_mineral_index": 1.618,
+        "clay_mineral_ratio": 1.5482,
+        "elevation_m": 215.1,
+        "slope_deg": 22.55,
+        "fault_proximity_km": 4.03
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.71408,
+          21.73442
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_970",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.73442,
+        "lon": 79.71408,
+        "probability": 0.9599000215530396,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6706,
+        "ferrous_mineral_index": 1.6135,
+        "clay_mineral_ratio": 1.5299,
+        "elevation_m": 215.3,
+        "slope_deg": 20.09,
+        "fault_proximity_km": 6.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.78659,
+          21.53603
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_863",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.53603,
+        "lon": 79.78659,
+        "probability": 0.9595999717712402,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6666,
+        "ferrous_mineral_index": 1.7334,
+        "clay_mineral_ratio": 1.5322,
+        "elevation_m": 503.8,
+        "slope_deg": 21.69,
+        "fault_proximity_km": 5.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.77657,
+          21.49358
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1286",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.49358,
+        "lon": 79.77657,
+        "probability": 0.9595999717712402,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5576,
+        "ferrous_mineral_index": 1.6282,
+        "clay_mineral_ratio": 1.4955,
+        "elevation_m": 501.1,
+        "slope_deg": 23.0,
+        "fault_proximity_km": 7.07
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.67993,
+          21.63763
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_862",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.63763,
+        "lon": 79.67993,
+        "probability": 0.9595999717712402,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4853,
+        "ferrous_mineral_index": 1.6822,
+        "clay_mineral_ratio": 1.5369,
+        "elevation_m": 459.4,
+        "slope_deg": 23.66,
+        "fault_proximity_km": 7.08
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.33027,
+          21.43356
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1134",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.43356,
+        "lon": 79.33027,
+        "probability": 0.9595999717712402,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5316,
+        "ferrous_mineral_index": 1.5916,
+        "clay_mineral_ratio": 1.4898,
+        "elevation_m": 478.6,
+        "slope_deg": 22.1,
+        "fault_proximity_km": 7.62
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.30876,
+          21.48433
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1411",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.48433,
+        "lon": 79.30876,
+        "probability": 0.9595999717712402,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5207,
+        "ferrous_mineral_index": 1.6779,
+        "clay_mineral_ratio": 1.5485,
+        "elevation_m": 517.7,
+        "slope_deg": 22.61,
+        "fault_proximity_km": 9.48
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.77819,
+          21.61945
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_137",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.61945,
+        "lon": 79.77819,
+        "probability": 0.9595999717712402,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.495,
+        "ferrous_mineral_index": 1.6253,
+        "clay_mineral_ratio": 1.5045,
+        "elevation_m": 424.9,
+        "slope_deg": 20.1,
+        "fault_proximity_km": 8.86
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.76286,
+          21.584
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_104",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.584,
+        "lon": 79.76286,
+        "probability": 0.9595999717712402,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.556,
+        "ferrous_mineral_index": 1.7648,
+        "clay_mineral_ratio": 1.4912,
+        "elevation_m": 471.6,
+        "slope_deg": 20.94,
+        "fault_proximity_km": 4.58
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.29807,
+          21.43441
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_72",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.43441,
+        "lon": 79.29807,
+        "probability": 0.9595999717712402,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6525,
+        "ferrous_mineral_index": 1.7341,
+        "clay_mineral_ratio": 1.487,
+        "elevation_m": 470.9,
+        "slope_deg": 22.41,
+        "fault_proximity_km": 4.47
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.74163,
+          21.58439
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_424",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.58439,
+        "lon": 79.74163,
+        "probability": 0.9595999717712402,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5251,
+        "ferrous_mineral_index": 1.6187,
+        "clay_mineral_ratio": 1.5248,
+        "elevation_m": 528.0,
+        "slope_deg": 22.95,
+        "fault_proximity_km": 4.07
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.22061,
+          21.49104
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_577",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.49104,
+        "lon": 79.22061,
+        "probability": 0.9595999717712402,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4876,
+        "ferrous_mineral_index": 1.5678,
+        "clay_mineral_ratio": 1.5243,
+        "elevation_m": 538.4,
+        "slope_deg": 20.23,
+        "fault_proximity_km": 10.23
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.21013,
+          21.37847
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_263",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.37847,
+        "lon": 79.21013,
+        "probability": 0.9531000256538391,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5334,
+        "ferrous_mineral_index": 1.7776,
+        "clay_mineral_ratio": 1.6092,
+        "elevation_m": 318.8,
+        "slope_deg": 18.79,
+        "fault_proximity_km": 7.12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.36855,
+          21.99342
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1361",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.99342,
+        "lon": 80.36855,
+        "probability": 0.9531000256538391,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4416,
+        "ferrous_mineral_index": 1.579,
+        "clay_mineral_ratio": 1.5785,
+        "elevation_m": 335.5,
+        "slope_deg": 17.73,
+        "fault_proximity_km": 8.92
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.17629,
+          21.39467
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_461",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.39467,
+        "lon": 79.17629,
+        "probability": 0.9527000188827515,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4899,
+        "ferrous_mineral_index": 1.5414,
+        "clay_mineral_ratio": 1.5613,
+        "elevation_m": 381.2,
+        "slope_deg": 17.86,
+        "fault_proximity_km": 10.07
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.34708,
+          21.99896
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_854",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.99896,
+        "lon": 80.34708,
+        "probability": 0.9527000188827515,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5412,
+        "ferrous_mineral_index": 1.5618,
+        "clay_mineral_ratio": 1.6019,
+        "elevation_m": 357.7,
+        "slope_deg": 16.51,
+        "fault_proximity_km": 11.38
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.346,
+          21.4143
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1095",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.4143,
+        "lon": 79.346,
+        "probability": 0.9520999789237976,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5479,
+        "ferrous_mineral_index": 1.7426,
+        "clay_mineral_ratio": 1.5551,
+        "elevation_m": 450.6,
+        "slope_deg": 22.5,
+        "fault_proximity_km": 8.93
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.41917,
+          21.88334
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_870",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.88334,
+        "lon": 80.41917,
+        "probability": 0.95169997215271,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5298,
+        "ferrous_mineral_index": 1.5444,
+        "clay_mineral_ratio": 1.5804,
+        "elevation_m": 85.8,
+        "slope_deg": 23.37,
+        "fault_proximity_km": 10.21
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.45473,
+          21.9487
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1389",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.9487,
+        "lon": 80.45473,
+        "probability": 0.95169997215271,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6139,
+        "ferrous_mineral_index": 1.7979,
+        "clay_mineral_ratio": 1.8598,
+        "elevation_m": 201.9,
+        "slope_deg": 24.72,
+        "fault_proximity_km": 2.71
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.43108,
+          21.98049
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_541",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.98049,
+        "lon": 80.43108,
+        "probability": 0.95169997215271,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.658,
+        "ferrous_mineral_index": 1.8643,
+        "clay_mineral_ratio": 1.6273,
+        "elevation_m": 198.7,
+        "slope_deg": 28.95,
+        "fault_proximity_km": 1.92
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.74833,
+          21.46735
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1280",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.46735,
+        "lon": 79.74833,
+        "probability": 0.9506999850273132,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4813,
+        "ferrous_mineral_index": 1.5772,
+        "clay_mineral_ratio": 1.5273,
+        "elevation_m": 545.5,
+        "slope_deg": 21.27,
+        "fault_proximity_km": 8.95
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.40925,
+          21.95535
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_53",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.95535,
+        "lon": 80.40925,
+        "probability": 0.9502999782562256,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5675,
+        "ferrous_mineral_index": 1.88,
+        "clay_mineral_ratio": 1.6259,
+        "elevation_m": 178.9,
+        "slope_deg": 37.24,
+        "fault_proximity_km": 4.43
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.19672,
+          21.86296
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1479",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.86296,
+        "lon": 80.19672,
+        "probability": 0.9502999782562256,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6643,
+        "ferrous_mineral_index": 1.779,
+        "clay_mineral_ratio": 1.5808,
+        "elevation_m": 36.5,
+        "slope_deg": 20.94,
+        "fault_proximity_km": 3.94
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.19744,
+          21.85051
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_277",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.85051,
+        "lon": 80.19744,
+        "probability": 0.9502999782562256,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6863,
+        "ferrous_mineral_index": 1.6629,
+        "clay_mineral_ratio": 1.6331,
+        "elevation_m": 67.6,
+        "slope_deg": 33.61,
+        "fault_proximity_km": 3.43
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.18737,
+          21.85649
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_421",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.85649,
+        "lon": 80.18737,
+        "probability": 0.9502999782562256,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5799,
+        "ferrous_mineral_index": 1.6916,
+        "clay_mineral_ratio": 1.7291,
+        "elevation_m": 45.2,
+        "slope_deg": 26.77,
+        "fault_proximity_km": 4.66
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.58874,
+          21.72373
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1267",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.72373,
+        "lon": 79.58874,
+        "probability": 0.9502999782562256,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4621,
+        "ferrous_mineral_index": 1.732,
+        "clay_mineral_ratio": 1.5776,
+        "elevation_m": 200.6,
+        "slope_deg": 26.47,
+        "fault_proximity_km": 9.05
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.67708,
+          21.71437
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1212",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.71437,
+        "lon": 79.67708,
+        "probability": 0.9502999782562256,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.612,
+        "ferrous_mineral_index": 1.9155,
+        "clay_mineral_ratio": 1.752,
+        "elevation_m": 190.0,
+        "slope_deg": 28.02,
+        "fault_proximity_km": 1.97
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.22224,
+          21.87466
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1310",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.87466,
+        "lon": 80.22224,
+        "probability": 0.9502999782562256,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.7319,
+        "ferrous_mineral_index": 1.6469,
+        "clay_mineral_ratio": 1.6364,
+        "elevation_m": 124.5,
+        "slope_deg": 21.79,
+        "fault_proximity_km": 3.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.66885,
+          21.51247
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1208",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.51247,
+        "lon": 79.66885,
+        "probability": 0.9501000046730042,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5163,
+        "ferrous_mineral_index": 1.5644,
+        "clay_mineral_ratio": 1.578,
+        "elevation_m": 529.0,
+        "slope_deg": 18.85,
+        "fault_proximity_km": 9.13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.64633,
+          21.73128
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1397",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.73128,
+        "lon": 79.64633,
+        "probability": 0.9478999972343445,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.492,
+        "ferrous_mineral_index": 1.6638,
+        "clay_mineral_ratio": 1.5135,
+        "elevation_m": 177.3,
+        "slope_deg": 29.28,
+        "fault_proximity_km": 4.14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.34268,
+          21.3948
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1333",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.3948,
+        "lon": 79.34268,
+        "probability": 0.9473999738693237,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5253,
+        "ferrous_mineral_index": 1.5534,
+        "clay_mineral_ratio": 1.5531,
+        "elevation_m": 401.5,
+        "slope_deg": 19.39,
+        "fault_proximity_km": 8.73
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.32373,
+          21.35767
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_298",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.35767,
+        "lon": 79.32373,
+        "probability": 0.9466999769210815,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4462,
+        "ferrous_mineral_index": 1.5642,
+        "clay_mineral_ratio": 1.6215,
+        "elevation_m": 282.6,
+        "slope_deg": 17.07,
+        "fault_proximity_km": 8.73
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.67848,
+          21.75207
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1315",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.75207,
+        "lon": 79.67848,
+        "probability": 0.946399986743927,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6249,
+        "ferrous_mineral_index": 1.7399,
+        "clay_mineral_ratio": 1.4927,
+        "elevation_m": 197.5,
+        "slope_deg": 21.62,
+        "fault_proximity_km": 5.93
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.44543,
+          21.90823
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_249",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.90823,
+        "lon": 80.44543,
+        "probability": 0.946399986743927,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6053,
+        "ferrous_mineral_index": 1.6118,
+        "clay_mineral_ratio": 1.5372,
+        "elevation_m": 103.7,
+        "slope_deg": 25.5,
+        "fault_proximity_km": 7.01
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.4086,
+          21.94659
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1053",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.94659,
+        "lon": 80.4086,
+        "probability": 0.946399986743927,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5938,
+        "ferrous_mineral_index": 1.591,
+        "clay_mineral_ratio": 1.5419,
+        "elevation_m": 146.8,
+        "slope_deg": 26.89,
+        "fault_proximity_km": 4.96
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.25633,
+          21.32655
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_683",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.32655,
+        "lon": 79.25633,
+        "probability": 0.946399986743927,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5288,
+        "ferrous_mineral_index": 1.6054,
+        "clay_mineral_ratio": 1.5247,
+        "elevation_m": 198.2,
+        "slope_deg": 19.98,
+        "fault_proximity_km": 9.39
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.13271,
+          21.82078
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_559",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.82078,
+        "lon": 80.13271,
+        "probability": 0.9451000094413757,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4604,
+        "ferrous_mineral_index": 1.5682,
+        "clay_mineral_ratio": 1.5925,
+        "elevation_m": 86.9,
+        "slope_deg": 49.53,
+        "fault_proximity_km": 10.96
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.15645,
+          21.87947
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_95",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.87947,
+        "lon": 80.15645,
+        "probability": 0.9451000094413757,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4908,
+        "ferrous_mineral_index": 1.5315,
+        "clay_mineral_ratio": 1.5559,
+        "elevation_m": 69.5,
+        "slope_deg": 25.48,
+        "fault_proximity_km": 8.76
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.30055,
+          21.8253
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1351",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.8253,
+        "lon": 80.30055,
+        "probability": 0.9435999989509583,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5754,
+        "ferrous_mineral_index": 1.5507,
+        "clay_mineral_ratio": 1.5976,
+        "elevation_m": 78.2,
+        "slope_deg": 20.3,
+        "fault_proximity_km": 8.38
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.75883,
+          21.46559
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_793",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.46559,
+        "lon": 79.75883,
+        "probability": 0.9430000185966492,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5026,
+        "ferrous_mineral_index": 1.5353,
+        "clay_mineral_ratio": 1.4849,
+        "elevation_m": 546.1,
+        "slope_deg": 19.13,
+        "fault_proximity_km": 9.29
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.62959,
+          21.6184
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1225",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.6184,
+        "lon": 79.62959,
+        "probability": 0.9369999766349792,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4341,
+        "ferrous_mineral_index": 1.5602,
+        "clay_mineral_ratio": 1.4878,
+        "elevation_m": 418.6,
+        "slope_deg": 19.34,
+        "fault_proximity_km": 9.95
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.70981,
+          21.73559
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1238",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.73559,
+        "lon": 79.70981,
+        "probability": 0.9286999702453613,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5141,
+        "ferrous_mineral_index": 1.7016,
+        "clay_mineral_ratio": 1.5236,
+        "elevation_m": 160.5,
+        "slope_deg": 19.4,
+        "fault_proximity_km": 6.21
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.30719,
+          21.83559
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_116",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.83559,
+        "lon": 80.30719,
+        "probability": 0.9266999959945679,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5587,
+        "ferrous_mineral_index": 1.6062,
+        "clay_mineral_ratio": 1.492,
+        "elevation_m": 65.1,
+        "slope_deg": 18.54,
+        "fault_proximity_km": 8.86
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.6623,
+          21.77056
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_427",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.77056,
+        "lon": 79.6623,
+        "probability": 0.9266999959945679,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5181,
+        "ferrous_mineral_index": 1.5395,
+        "clay_mineral_ratio": 1.5483,
+        "elevation_m": 102.3,
+        "slope_deg": 18.25,
+        "fault_proximity_km": 7.85
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.56954,
+          21.6632
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_910",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.6632,
+        "lon": 79.56954,
+        "probability": 0.9235000014305115,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5469,
+        "ferrous_mineral_index": 1.5724,
+        "clay_mineral_ratio": 1.4236,
+        "elevation_m": 307.3,
+        "slope_deg": 20.49,
+        "fault_proximity_km": 11.53
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.614,
+          21.68726
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1230",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.68726,
+        "lon": 79.614,
+        "probability": 0.9235000014305115,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5102,
+        "ferrous_mineral_index": 1.8051,
+        "clay_mineral_ratio": 1.4049,
+        "elevation_m": 321.2,
+        "slope_deg": 21.18,
+        "fault_proximity_km": 6.02
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.28218,
+          21.40828
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_494",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.40828,
+        "lon": 79.28218,
+        "probability": 0.9230999946594238,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5941,
+        "ferrous_mineral_index": 1.918,
+        "clay_mineral_ratio": 1.4773,
+        "elevation_m": 380.7,
+        "slope_deg": 29.51,
+        "fault_proximity_km": 1.86
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.71021,
+          21.64566
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_342",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.64566,
+        "lon": 79.71021,
+        "probability": 0.9229999780654907,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5207,
+        "ferrous_mineral_index": 1.6293,
+        "clay_mineral_ratio": 1.3746,
+        "elevation_m": 369.1,
+        "slope_deg": 20.66,
+        "fault_proximity_km": 7.73
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.3419,
+          21.44024
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_125",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.44024,
+        "lon": 79.3419,
+        "probability": 0.9211999773979187,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5259,
+        "ferrous_mineral_index": 1.5991,
+        "clay_mineral_ratio": 1.4761,
+        "elevation_m": 520.2,
+        "slope_deg": 20.37,
+        "fault_proximity_km": 9.09
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.66901,
+          21.62607
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1000",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.62607,
+        "lon": 79.66901,
+        "probability": 0.920799970626831,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.518,
+        "ferrous_mineral_index": 1.6365,
+        "clay_mineral_ratio": 1.4477,
+        "elevation_m": 402.9,
+        "slope_deg": 20.47,
+        "fault_proximity_km": 8.21
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.73418,
+          21.58811
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_154",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.58811,
+        "lon": 79.73418,
+        "probability": 0.9190000295639038,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5611,
+        "ferrous_mineral_index": 1.7548,
+        "clay_mineral_ratio": 1.4691,
+        "elevation_m": 497.4,
+        "slope_deg": 20.83,
+        "fault_proximity_km": 4.58
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.70304,
+          21.50813
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_526",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.50813,
+        "lon": 79.70304,
+        "probability": 0.9165999889373779,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5135,
+        "ferrous_mineral_index": 1.714,
+        "clay_mineral_ratio": 1.4649,
+        "elevation_m": 565.5,
+        "slope_deg": 26.04,
+        "fault_proximity_km": 6.26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.77223,
+          21.46374
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1378",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.46374,
+        "lon": 79.77223,
+        "probability": 0.9165999889373779,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5522,
+        "ferrous_mineral_index": 1.5837,
+        "clay_mineral_ratio": 1.4584,
+        "elevation_m": 556.6,
+        "slope_deg": 28.86,
+        "fault_proximity_km": 9.87
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.22251,
+          21.44529
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1424",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.44529,
+        "lon": 79.22251,
+        "probability": 0.9165999889373779,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5232,
+        "ferrous_mineral_index": 1.7232,
+        "clay_mineral_ratio": 1.4523,
+        "elevation_m": 507.1,
+        "slope_deg": 22.17,
+        "fault_proximity_km": 6.14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.80414,
+          21.49758
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_502",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.49758,
+        "lon": 79.80414,
+        "probability": 0.9165999889373779,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5573,
+        "ferrous_mineral_index": 1.5771,
+        "clay_mineral_ratio": 1.4576,
+        "elevation_m": 498.0,
+        "slope_deg": 20.52,
+        "fault_proximity_km": 8.77
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.77135,
+          21.54583
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_28",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.54583,
+        "lon": 79.77135,
+        "probability": 0.9165999889373779,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5563,
+        "ferrous_mineral_index": 1.7867,
+        "clay_mineral_ratio": 1.434,
+        "elevation_m": 500.8,
+        "slope_deg": 23.22,
+        "fault_proximity_km": 3.14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.7841,
+          21.51933
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_97",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.51933,
+        "lon": 79.7841,
+        "probability": 0.9165999889373779,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5873,
+        "ferrous_mineral_index": 1.7273,
+        "clay_mineral_ratio": 1.4505,
+        "elevation_m": 479.7,
+        "slope_deg": 30.12,
+        "fault_proximity_km": 5.54
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.72171,
+          21.60432
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_700",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.60432,
+        "lon": 79.72171,
+        "probability": 0.9165999889373779,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6106,
+        "ferrous_mineral_index": 1.6116,
+        "clay_mineral_ratio": 1.4653,
+        "elevation_m": 487.5,
+        "slope_deg": 23.82,
+        "fault_proximity_km": 6.71
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.17226,
+          21.38879
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_695",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.38879,
+        "lon": 79.17226,
+        "probability": 0.8959000110626221,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5232,
+        "ferrous_mineral_index": 1.5593,
+        "clay_mineral_ratio": 1.4727,
+        "elevation_m": 356.2,
+        "slope_deg": 15.85,
+        "fault_proximity_km": 10.64
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.72678,
+          21.63421
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_624",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.63421,
+        "lon": 79.72678,
+        "probability": 0.8942000269889832,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5998,
+        "ferrous_mineral_index": 1.5996,
+        "clay_mineral_ratio": 1.3059,
+        "elevation_m": 375.1,
+        "slope_deg": 22.72,
+        "fault_proximity_km": 9.76
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.41436,
+          22.04174
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_135",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 22.04174,
+        "lon": 80.41436,
+        "probability": 0.8942000269889832,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4918,
+        "ferrous_mineral_index": 1.6029,
+        "clay_mineral_ratio": 1.3084,
+        "elevation_m": 385.4,
+        "slope_deg": 19.94,
+        "fault_proximity_km": 8.55
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.70299,
+          21.637
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_458",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.637,
+        "lon": 79.70299,
+        "probability": 0.8934000134468079,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4855,
+        "ferrous_mineral_index": 1.6659,
+        "clay_mineral_ratio": 1.4791,
+        "elevation_m": 408.9,
+        "slope_deg": 19.5,
+        "fault_proximity_km": 8.07
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.72076,
+          21.73726
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1275",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.73726,
+        "lon": 79.72076,
+        "probability": 0.8932999968528748,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6354,
+        "ferrous_mineral_index": 1.6853,
+        "clay_mineral_ratio": 1.4704,
+        "elevation_m": 190.1,
+        "slope_deg": 28.55,
+        "fault_proximity_km": 7.29
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.49912,
+          21.98523
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1465",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.98523,
+        "lon": 80.49912,
+        "probability": 0.8931999802589417,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4985,
+        "ferrous_mineral_index": 1.5884,
+        "clay_mineral_ratio": 1.4324,
+        "elevation_m": 280.6,
+        "slope_deg": 19.59,
+        "fault_proximity_km": 6.11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.46378,
+          21.91972
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_306",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.91972,
+        "lon": 80.46378,
+        "probability": 0.8903999924659729,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6052,
+        "ferrous_mineral_index": 1.6338,
+        "clay_mineral_ratio": 1.4827,
+        "elevation_m": 167.9,
+        "slope_deg": 27.88,
+        "fault_proximity_km": 6.07
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.31966,
+          21.34628
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1233",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.34628,
+        "lon": 79.31966,
+        "probability": 0.8902999758720398,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.603,
+        "ferrous_mineral_index": 1.5653,
+        "clay_mineral_ratio": 1.464,
+        "elevation_m": 275.0,
+        "slope_deg": 17.57,
+        "fault_proximity_km": 9.33
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.62839,
+          21.60707
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_836",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.60707,
+        "lon": 79.62839,
+        "probability": 0.8902999758720398,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5468,
+        "ferrous_mineral_index": 1.5759,
+        "clay_mineral_ratio": 1.3959,
+        "elevation_m": 435.4,
+        "slope_deg": 16.44,
+        "fault_proximity_km": 11.16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.43089,
+          21.88689
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_242",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.88689,
+        "lon": 80.43089,
+        "probability": 0.8902000188827515,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4811,
+        "ferrous_mineral_index": 1.6935,
+        "clay_mineral_ratio": 1.4619,
+        "elevation_m": 49.9,
+        "slope_deg": 21.07,
+        "fault_proximity_km": 9.53
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.66023,
+          21.72013
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_40",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.72013,
+        "lon": 79.66023,
+        "probability": 0.8902000188827515,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6926,
+        "ferrous_mineral_index": 1.8798,
+        "clay_mineral_ratio": 1.46,
+        "elevation_m": 161.9,
+        "slope_deg": 23.11,
+        "fault_proximity_km": 2.35
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.30221,
+          21.9072
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1445",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.9072,
+        "lon": 80.30221,
+        "probability": 0.8902000188827515,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4879,
+        "ferrous_mineral_index": 1.6545,
+        "clay_mineral_ratio": 1.4479,
+        "elevation_m": 60.8,
+        "slope_deg": 23.17,
+        "fault_proximity_km": 10.64
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.62637,
+          21.70247
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1083",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.70247,
+        "lon": 79.62637,
+        "probability": 0.8902000188827515,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.6199,
+        "ferrous_mineral_index": 1.8645,
+        "clay_mineral_ratio": 1.4634,
+        "elevation_m": 202.0,
+        "slope_deg": 22.25,
+        "fault_proximity_km": 4.48
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.27086,
+          21.31529
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1017",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.31529,
+        "lon": 79.27086,
+        "probability": 0.8902000188827515,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4619,
+        "ferrous_mineral_index": 1.5425,
+        "clay_mineral_ratio": 1.4449,
+        "elevation_m": 190.9,
+        "slope_deg": 23.58,
+        "fault_proximity_km": 10.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.28762,
+          21.79279
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_397",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.79279,
+        "lon": 80.28762,
+        "probability": 0.8902000188827515,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5259,
+        "ferrous_mineral_index": 1.5854,
+        "clay_mineral_ratio": 1.4624,
+        "elevation_m": 31.0,
+        "slope_deg": 21.18,
+        "fault_proximity_km": 8.89
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.23381,
+          21.92137
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_508",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.92137,
+        "lon": 80.23381,
+        "probability": 0.8902000188827515,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5111,
+        "ferrous_mineral_index": 1.5522,
+        "clay_mineral_ratio": 1.4614,
+        "elevation_m": 79.6,
+        "slope_deg": 19.99,
+        "fault_proximity_km": 8.35
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.1929,
+          21.77869
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_728",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.77869,
+        "lon": 80.1929,
+        "probability": 0.8871999979019165,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5482,
+        "ferrous_mineral_index": 1.763,
+        "clay_mineral_ratio": 1.429,
+        "elevation_m": 73.0,
+        "slope_deg": 23.87,
+        "fault_proximity_km": 8.47
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.4141,
+          21.95803
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1091",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.95803,
+        "lon": 80.4141,
+        "probability": 0.8871999979019165,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.615,
+        "ferrous_mineral_index": 1.7947,
+        "clay_mineral_ratio": 1.4455,
+        "elevation_m": 185.2,
+        "slope_deg": 22.71,
+        "fault_proximity_km": 3.82
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.38127,
+          21.9489
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1249",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.9489,
+        "lon": 80.38127,
+        "probability": 0.8842999935150146,
+        "confidence": "MEDIUM",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5521,
+        "ferrous_mineral_index": 1.5306,
+        "clay_mineral_ratio": 1.3758,
+        "elevation_m": 214.3,
+        "slope_deg": 19.11,
+        "fault_proximity_km": 7.59
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.40432,
+          22.02632
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1302",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 22.02632,
+        "lon": 80.40432,
+        "probability": 0.8822000026702881,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5619,
+        "ferrous_mineral_index": 1.5204,
+        "clay_mineral_ratio": 1.4885,
+        "elevation_m": 373.8,
+        "slope_deg": 25.36,
+        "fault_proximity_km": 7.64
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.48945,
+          22.05254
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_476",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 22.05254,
+        "lon": 80.48945,
+        "probability": 0.8817999958992004,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5787,
+        "ferrous_mineral_index": 1.6365,
+        "clay_mineral_ratio": 1.3366,
+        "elevation_m": 404.6,
+        "slope_deg": 16.13,
+        "fault_proximity_km": 10.23
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.68738,
+          21.44194
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_363",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.44194,
+        "lon": 79.68738,
+        "probability": 0.8784000277519226,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4777,
+        "ferrous_mineral_index": 1.5401,
+        "clay_mineral_ratio": 1.4938,
+        "elevation_m": 497.9,
+        "slope_deg": 21.24,
+        "fault_proximity_km": 13.28
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.26616,
+          21.49734
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_388",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.49734,
+        "lon": 79.26616,
+        "probability": 0.8774999976158142,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5195,
+        "ferrous_mineral_index": 1.514,
+        "clay_mineral_ratio": 1.5934,
+        "elevation_m": 538.1,
+        "slope_deg": 21.46,
+        "fault_proximity_km": 9.63
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.67582,
+          21.48025
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_539",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.48025,
+        "lon": 79.67582,
+        "probability": 0.8758000135421753,
+        "confidence": "MEDIUM",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4691,
+        "ferrous_mineral_index": 1.5383,
+        "clay_mineral_ratio": 1.2835,
+        "elevation_m": 584.9,
+        "slope_deg": 18.98,
+        "fault_proximity_km": 10.58
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.79675,
+          21.47943
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1415",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.47943,
+        "lon": 79.79675,
+        "probability": 0.8758000135421753,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5134,
+        "ferrous_mineral_index": 1.6673,
+        "clay_mineral_ratio": 1.3102,
+        "elevation_m": 539.3,
+        "slope_deg": 17.62,
+        "fault_proximity_km": 9.65
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.62816,
+          21.76437
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_955",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.76437,
+        "lon": 79.62816,
+        "probability": 0.8756999969482422,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5779,
+        "ferrous_mineral_index": 1.5588,
+        "clay_mineral_ratio": 1.3474,
+        "elevation_m": 136.2,
+        "slope_deg": 25.04,
+        "fault_proximity_km": 8.33
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.69524,
+          21.54783
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1498",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.54783,
+        "lon": 79.69524,
+        "probability": 0.8747000098228455,
+        "confidence": "MEDIUM",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5539,
+        "ferrous_mineral_index": 1.4613,
+        "clay_mineral_ratio": 1.6015,
+        "elevation_m": 580.6,
+        "slope_deg": 20.67,
+        "fault_proximity_km": 5.31
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.6783,
+          21.6381
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1419",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.6381,
+        "lon": 79.6783,
+        "probability": 0.871399998664856,
+        "confidence": "MEDIUM",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.579,
+        "ferrous_mineral_index": 1.4921,
+        "clay_mineral_ratio": 1.6606,
+        "elevation_m": 427.6,
+        "slope_deg": 23.39,
+        "fault_proximity_km": 6.99
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.61893,
+          21.6212
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_392",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.6212,
+        "lon": 79.61893,
+        "probability": 0.8682000041007996,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5166,
+        "ferrous_mineral_index": 1.622,
+        "clay_mineral_ratio": 1.3911,
+        "elevation_m": 413.0,
+        "slope_deg": 16.43,
+        "fault_proximity_km": 10.23
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.7801,
+          21.74018
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_48",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.74018,
+        "lon": 79.7801,
+        "probability": 0.8597000241279602,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4016,
+        "ferrous_mineral_index": 1.5298,
+        "clay_mineral_ratio": 1.4828,
+        "elevation_m": 144.2,
+        "slope_deg": 19.85,
+        "fault_proximity_km": 13.35
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.30336,
+          21.87146
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1453",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.87146,
+        "lon": 80.30336,
+        "probability": 0.8564000129699707,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4543,
+        "ferrous_mineral_index": 1.6572,
+        "clay_mineral_ratio": 1.3066,
+        "elevation_m": 45.6,
+        "slope_deg": 20.1,
+        "fault_proximity_km": 8.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.74069,
+          21.76271
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_96",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.76271,
+        "lon": 79.74069,
+        "probability": 0.8532000184059143,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4989,
+        "ferrous_mineral_index": 1.6104,
+        "clay_mineral_ratio": 1.4442,
+        "elevation_m": 57.5,
+        "slope_deg": 17.27,
+        "fault_proximity_km": 10.77
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.61036,
+          21.74966
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1468",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.74966,
+        "lon": 79.61036,
+        "probability": 0.8532000184059143,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5166,
+        "ferrous_mineral_index": 1.5628,
+        "clay_mineral_ratio": 1.3846,
+        "elevation_m": 146.1,
+        "slope_deg": 18.13,
+        "fault_proximity_km": 8.34
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2192,
+          21.93089
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_445",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.93089,
+        "lon": 80.2192,
+        "probability": 0.8532000184059143,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5038,
+        "ferrous_mineral_index": 1.6747,
+        "clay_mineral_ratio": 1.461,
+        "elevation_m": 161.4,
+        "slope_deg": 19.16,
+        "fault_proximity_km": 9.43
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.60114,
+          21.76176
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_865",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.76176,
+        "lon": 79.60114,
+        "probability": 0.849399983882904,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5336,
+        "ferrous_mineral_index": 1.547,
+        "clay_mineral_ratio": 1.4028,
+        "elevation_m": 105.2,
+        "slope_deg": 18.06,
+        "fault_proximity_km": 10.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.15499,
+          21.87306
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_297",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.87306,
+        "lon": 80.15499,
+        "probability": 0.849399983882904,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4993,
+        "ferrous_mineral_index": 1.615,
+        "clay_mineral_ratio": 1.449,
+        "elevation_m": 33.7,
+        "slope_deg": 18.16,
+        "fault_proximity_km": 8.64
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.24311,
+          21.92442
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_63",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.92442,
+        "lon": 80.24311,
+        "probability": 0.849399983882904,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4588,
+        "ferrous_mineral_index": 1.672,
+        "clay_mineral_ratio": 1.4333,
+        "elevation_m": 123.8,
+        "slope_deg": 18.76,
+        "fault_proximity_km": 8.82
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.15837,
+          21.76929
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_71",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.76929,
+        "lon": 80.15837,
+        "probability": 0.849399983882904,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5274,
+        "ferrous_mineral_index": 1.6856,
+        "clay_mineral_ratio": 1.4527,
+        "elevation_m": 69.8,
+        "slope_deg": 15.06,
+        "fault_proximity_km": 11.54
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.63204,
+          21.6223
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1065",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.6223,
+        "lon": 79.63204,
+        "probability": 0.8478999733924866,
+        "confidence": "LOW",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4777,
+        "ferrous_mineral_index": 1.4265,
+        "clay_mineral_ratio": 1.5127,
+        "elevation_m": 406.0,
+        "slope_deg": 21.67,
+        "fault_proximity_km": 9.44
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.21517,
+          21.92801
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_272",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.92801,
+        "lon": 80.21517,
+        "probability": 0.8388000130653381,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5489,
+        "ferrous_mineral_index": 1.5474,
+        "clay_mineral_ratio": 1.3459,
+        "elevation_m": 137.9,
+        "slope_deg": 17.0,
+        "fault_proximity_km": 9.17
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.64546,
+          21.5324
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_1256",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.5324,
+        "lon": 79.64546,
+        "probability": 0.8334000110626221,
+        "confidence": "MEDIUM",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4433,
+        "ferrous_mineral_index": 1.5341,
+        "clay_mineral_ratio": 1.3226,
+        "elevation_m": 491.8,
+        "slope_deg": 15.48,
+        "fault_proximity_km": 10.97
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.35953,
+          21.88853
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_454",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.88853,
+        "lon": 80.35953,
+        "probability": 0.8184000253677368,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.4025,
+        "ferrous_mineral_index": 1.5307,
+        "clay_mineral_ratio": 1.5707,
+        "elevation_m": 57.2,
+        "slope_deg": 14.18,
+        "fault_proximity_km": 13.28
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26731,
+          21.77228
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE_377",
+        "target_type": "AI Prospectivity / Exploration Target Zone",
+        "lat": 21.77228,
+        "lon": 80.26731,
+        "probability": 0.8149999976158142,
+        "confidence": "HIGH",
+        "scientific_disclaimer": "Prioritizes surface area for diamond core drilling; not an estimate of mineable reserve tonnage.",
+        "iron_oxide_ratio": 0.5579,
+        "ferrous_mineral_index": 1.7443,
+        "clay_mineral_ratio": 1.3092,
+        "elevation_m": 76.3,
+        "slope_deg": 16.8,
+        "fault_proximity_km": 9.31
+      }
+    }
+  ]
+}
