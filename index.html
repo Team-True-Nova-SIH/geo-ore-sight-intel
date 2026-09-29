@@ -1399,9 +1399,40 @@
                         • Ferro-Manganese Alloy: <b>₹72,000 – ₹78,000/T</b><br>
                         • Phase-1 Drilling Cost: <b>₹4,500/meter</b>
                     </div>
-                    <button class="btn-outline" style="margin-top: 12px;" onclick="alert('Report generation feature coming in v2.0')">
-                        📥 Export Full PDF Report
+                    <button class="btn-outline" style="margin-top: 12px;" onclick="window.open('/api/v1/shortfall/forecast', '_blank')">
+                        📥 Export Full JSON Report
                     </button>
+                </div>
+            </div>
+
+            <!-- ===== DATA PROVENANCE TAB ===== -->
+            <div class="tab-page" id="page-provenance">
+                <div class="section">
+                    <div class="section-title">
+                        <span>🔍 Data Provenance Registry</span>
+                        <span class="badge-sm badge-blue">Authenticity Tracking</span>
+                    </div>
+                    <p style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 12px;">
+                        Tracking data sources to ensure transparency and scientific validity.
+                    </p>
+                </div>
+                <div class="section">
+                    <div class="rec-box" style="border-left-color: var(--accent-green);">
+                        <strong>🛰️ Space & Satellite Tech</strong>
+                        • Topography: NASA SRTM 30m DEM (AUTHENTIC)<br>
+                        • Spectral: Copernicus Sentinel-2 L2A (AUTHENTIC)<br>
+                        • Weather: ECMWF ERA5-Land Reanalysis (AUTHENTIC)
+                    </div>
+                    <div class="rec-box" style="margin-top: 8px; border-left-color: var(--accent-orange);">
+                        <strong>⛏️ Operational Telemetry</strong>
+                        • Production Target/Actual: SYNTHETIC (Awaiting MOIL SCADA/ERP integration)<br>
+                        • Equipment Downtime: SYNTHETIC (Demo What-If Simulator)
+                    </div>
+                    <div class="rec-box" style="margin-top: 8px; border-left-color: var(--accent-blue);">
+                        <strong>🪨 Geological Modeling</strong>
+                        • Existing Mines: GSI Bhukosh / MOIL Annual Reports (AUTHENTIC)<br>
+                        • Prospectivity Output: AI Generated via Spatial GroupKFold CV (DEFENSIBLE)
+                    </div>
                 </div>
             </div>
         </div>
@@ -1506,7 +1537,7 @@
             } else if (user === 'geologist' && pass === 'geo123') {
                 tabs.forEach(t => {
                     const tabName = t.getAttribute('data-tab');
-                    if (['prospectivity', 'geology', 'mlmodels'].includes(tabName)) {
+                    if (['prospectivity', 'geology', 'mlmodels', 'provenance'].includes(tabName)) {
                         t.style.display = 'inline-block';
                     } else {
                         t.style.display = 'none';
@@ -1517,7 +1548,7 @@
             } else if (user === 'manager' && pass === 'moil123') {
                 tabs.forEach(t => {
                     const tabName = t.getAttribute('data-tab');
-                    if (['mines', 'operations', 'simulator', 'reports'].includes(tabName)) {
+                    if (['mines', 'operations', 'simulator', 'reports', 'provenance'].includes(tabName)) {
                         t.style.display = 'inline-block';
                     } else {
                         t.style.display = 'none';
